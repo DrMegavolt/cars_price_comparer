@@ -15,6 +15,7 @@
     "method-override": "~2.1.1",
     "mongoose": "~3.8.12",
     "morgan": "~1.1.1",
+    "request": "^2.42.0",
     "serve-favicon": "~2.0.1"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "load-grunt-tasks": "~0.6.0",
     "mocha": "^1.21.4",
     "request": "~2.36.0",
+    "should": "^4.0.4",
     "time-grunt": "~0.3.2"
   }
 }

@@ -3,13 +3,45 @@
  */
 var request = require('request');
 var cheerio = require('cheerio');
-module.exports = function(){
+
+var config = {
+    host:'http://avtobazar.ua',
+    searchUrl: '/poisk/avto/?country1=1911&period=168&show_only=all&currency=1915&after_dtp=yes_only&no_customs=no&in_credit=yes&exchange=yes&rent=no&autosalon_own=yes&order=-date_last_modify',
+    titleSelector: '.prod',
+    citySelector: '.city',
+    priceUAHSelector: '.price',
+    urlSelector: '.url',
+    priceUSDSelector: '.calc-price',
+    containerSelector: '.res_item',
+    photoSelector: '.photo'
+};
+
+module.exports.load = function (callback) {
     "use strict";
-    var url = 'http://avtobazar.ua/poisk/avto/?country1=1911&period=168&show_only=all&currency=1915&after_dtp=yes_only&no_customs=no&in_credit=yes&exchange=yes&rent=no&autosalon_own=yes&order=-date_last_modify';
-    request(url, function(error, response, body ){
-        console.log(error)
-        console.log(response)
-        console.log(body)
+    var url = config.host + config.searchUrl;
+    request(url, function (error, response, body) {
+
+        var $ = cheerio.load(body);
+        var cars = [];
+
+        $(config.containerSelector).each(function (index, element) {
+            var $e = $(element);
+            var $title = $e.find(config.titleSelector);
+            var $priceUSD = $e.find(config.priceUSDSelector);
+            var $priceUAH = $e.find(config.priceUAHSelector);
+            var $city = $e.find(config.citySelector);
+            var $photo = $e.find(config.photoSelector);
+            var $relativeUrl = $e.find(config.urlSelector);
+            cars.push({
+                title: $title.text().trim(),
+                priceUSD: $priceUSD.text().trim(),
+                priceUAH: $priceUAH.text().trim(),
+                city: $city.text().trim(),
+                relativeUrl: $relativeUrl.attr('href').trim(),
+                photos:[$photo.attr('src')]
+            })
+        });
+        callback(error, cars);
     })
 
-}
+};
