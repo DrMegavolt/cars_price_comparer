@@ -3,7 +3,8 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-var CarSchema = new Schema({
+
+module.exports.carSchema = new Schema({
     title: String,
     relativeUrl: String,
     site: String,
@@ -12,7 +13,5 @@ var CarSchema = new Schema({
     city: String,
     photos:Array
 });
-
-
-mongoose.model('Car', CarSchema);
+//mongoose.model('Car', carSchema);
 

@@ -9,7 +9,7 @@ var config = {
       name: 'price-comparer'
     },
     port: 3000,
-    db: 'mongodb://localhost/price-comparer-development'
+    db: 'mongodb://localhost:27017/price-comparer-development'
     
   },
 
@@ -19,7 +19,7 @@ var config = {
       name: 'price-comparer'
     },
     port: 3000,
-    db: 'mongodb://localhost/price-comparer-test'
+    db: 'mongodb://localhost:27017/price-comparer-test'
     
   },
 

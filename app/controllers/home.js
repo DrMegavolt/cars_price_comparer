@@ -1,19 +1,23 @@
+"use strict";
 var express = require('express'),
   router = express.Router(),
-  mongoose = require('mongoose'),
-  Article = mongoose.model('Article');
+  carSrv = require('../services/carService');
+var scrapper = require('../services/htmlScrapperService');
 
 module.exports = function (app) {
   app.use('/', router);
 };
 
 router.get('/', function (req, res, next) {
+    scrapper.load(function(err, cars){
+        carSrv.saveCars(cars, function(){
+            res.render('index', {
+                title: 'Generator-Express MVC',
+                articles: cars
+            });
+        });
 
-  Article.find(function (err, articles) {
-    if (err) return next(err);
-    res.render('index', {
-      title: 'Generator-Express MVC',
-      articles: articles
-    });
-  });
+
+    })
+
 });
