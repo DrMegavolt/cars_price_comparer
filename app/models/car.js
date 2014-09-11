@@ -11,7 +11,8 @@ module.exports.carSchema = new Schema({
     priceUSD: Number,
     priceUAH: Number,
     city: String,
-    photos:Array
+    photos:Array,
+    created:  {type: Date, default: Date.now}
 });
 //mongoose.model('Car', carSchema);
 

@@ -16,8 +16,6 @@ router.get('/', function (req, res, next) {
                 articles: cars
             });
         });
-
-
     })
 
 });

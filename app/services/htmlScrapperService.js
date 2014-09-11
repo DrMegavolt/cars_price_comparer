@@ -34,8 +34,8 @@ module.exports.load = function (callback) {
             var $relativeUrl = $e.find(config.urlSelector);
             cars.push({
                 title: $title.text().trim(),
-                priceUSD: $priceUSD.text().trim(),
-                priceUAH: $priceUAH.text().trim(),
+                priceUSD: parseFloat( $priceUSD.text().trim()),
+                priceUAH: parseFloat( $priceUAH.text().trim()),
                 city: $city.text().trim(),
                 relativeUrl: $relativeUrl.attr('href').trim(),
                 photos:[$photo.attr('src')]
