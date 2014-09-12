@@ -6,7 +6,7 @@ module.exports.saveCars = function (cars) {
     "use strict";
     for (var i = 0; i < cars.length; i++) {
         var c = cars[i];
-        q.defer();
+        //q.defer();
         CarModel.findOne({relativeUrl: c.relativeUrl}).exec(function (err, car) {
             if (!car) { // create only if not exist
                 //TODO:TEST
