@@ -6,6 +6,8 @@ var mongoose = require('mongoose'),
 
 module.exports.carSchema = new Schema({
     title: String,
+    seller: String,
+    phone: String,
     relativeUrl: String,
     site: String,
     priceUSD: Number,

@@ -26,12 +26,16 @@ function extractCar($, element, config) {
     var $priceUAH = $e.find(config.priceUAHSelector);
     var $city = $e.find(config.citySelector);
     var $photo = $e.find(config.photoSelector);
+    var $sellerName = $e.find(config.sellerNameSelector);
+    var $sellerPhone = $e.find(config.sellerPhoneSelector);
     var $relativeUrl = $e.find(config.urlSelector);
     var car = {
         title: $title.text().trim(),
         priceUSD: parseFloat($priceUSD.text().trim()),
         priceUAH: parseFloat($priceUAH.text().trim()),
         city: $city.text().trim(),
+        seller: $sellerName.text().trim(),
+        phone: $sellerPhone.text().trim(),
         relativeUrl: $relativeUrl.attr('href').trim(),
         photos: [$photo.attr('src')],
         source: config.name

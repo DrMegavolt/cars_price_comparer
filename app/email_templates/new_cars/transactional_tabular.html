@@ -556,55 +556,63 @@ h4, .h4 {
                                                 {{#each this.cars}}
                                                 <tr>
                                                 <td valign="top" style="padding-top:0; padding-bottom:0;">
+                                                   -->
                                                     <table border="0" cellpadding="10" cellspacing="0" width="100%"
                                                            class="templateDataTable">
                                                         <tr>
-                                                            <th scope="col" valign="top" width="25%"
+                                                            <th scope="col" valign="top" width="50%"
                                                                 class="dataTableHeading">
-                                                                DATE
+                                                                <a href="{{site}}{{relativeUrl}}"> {{title}}</a>
                                                             </th>
                                                             <th scope="col" valign="top" width="25%"
                                                                 class="dataTableHeading">
                                                                 EMAILS SENT
                                                             </th>
-                                                            <th scope="col" valign="top" width="50%"
+                                                            <th scope="col" valign="top" width="25%"
                                                                 class="dataTableHeading">
                                                                 EMAIL SUBJECT
                                                             </th>
                                                         </tr>
-                                                        <tr>
-                                                            <td valign="top" class="dataTableContent">
-                                                                SEP 29, 2012
-                                                            </td>
-                                                            <td valign="top" class="dataTableContent">
-                                                                2,760
-                                                            </td>
-                                                            <td valign="top" class="dataTableContent">
-                                                                3-MONTH PASSWORD UPDATE
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
+                                                        <!--title: String,-->
+                                                        <!--relativeUrl: String,-->
+                                                        <!--site: String,-->
+                                                        <!--priceUSD: Number,-->
+                                                        <!--priceUAH: Number,-->
+                                                        <!--city: String,-->
+                                                        <!--photos:Array,-->
+                                                            <tr>
+                                                                <td valign="top" class="dataTableContent">
+                                                                    SEP 29, 2012
+                                                                </td>
+                                                                <td valign="top" class="dataTableContent">
+                                                                    2,760
+                                                                </td>
+                                                                <td valign="top" class="dataTableContent">
+                                                                    3-MONTH PASSWORD UPDATE
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                    {{/each}}
                                                 {{/each}}
-                                            {{/each}}
 
-                                            <tr>
-                                                <td align="center" valign="top" style="padding-top:0;">
-                                                    <table border="0" cellpadding="15" cellspacing="0"
-                                                           class="templateButton">
-                                                        <tr>
-                                                            <td valign="middle" class="templateButtonContent">
-                                                                <div mc:edit="std_content02">
-                                                                    <a href="http://www.mandrill.com/" target="_blank">Перейти на сайт</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <!-- // End Module: Standard Content \\ -->
+                                                <tr>
+                                                    <td align="center" valign="top" style="padding-top:0;">
+                                                        <table border="0" cellpadding="15" cellspacing="0"
+                                                               class="templateButton">
+                                                            <tr>
+                                                                <td valign="middle" class="templateButtonContent">
+                                                                    <div mc:edit="std_content02">
+                                                                        <a href="http://www.mandrill.com/" target="_blank">Перейти на сайт</a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- // End Module: Standard Content \\ -->
 
                                     </td>
                                 </tr>

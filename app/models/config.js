@@ -8,6 +8,8 @@ module.exports.configSchema = new Schema({
     host:String,
     searchUrl: String,
     titleSelector: String,
+    sellerNameSelector: String,
+    sellerPhoneSelector: String,
     citySelector: String,
     priceUAHSelector: String,
     urlSelector: String,
