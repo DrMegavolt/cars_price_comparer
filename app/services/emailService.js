@@ -15,8 +15,16 @@ var transporter = nodemailer.createTransport({
 module.exports.sendNewCarsEmail = function (cars, callback) {
     emailTemplates(templatesDir, function (err, template) {
 
-        // Render a single email with one template
-        var locals = {cars: cars};
+        var locals = {sources:[
+            {
+                name: 'Автобазар',
+                cars: cars
+            },
+            {
+                name: 'AutoRia',
+                cars: cars
+            }
+        ] };
 
         template('new_cars', locals, function (err, html, text) {
             if (err) {
