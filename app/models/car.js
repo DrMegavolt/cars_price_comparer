@@ -14,5 +14,4 @@ module.exports.carSchema = new Schema({
     photos:Array,
     created:  {type: Date, default: Date.now}
 });
-//mongoose.model('Car', carSchema);
 

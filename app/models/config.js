@@ -3,7 +3,6 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-
 module.exports.configSchema = new Schema({
     name:String,
     host:String,

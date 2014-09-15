@@ -1,21 +1,28 @@
 "use strict";
 var express = require('express'),
-  router = express.Router(),
-  carSrv = require('../services/carService');
+    router = express.Router(),
+    carSrv = require('../services/carService');
 var scrapper = require('../services/htmlScrapperService');
-
+var configSrv = require('../services/configService');
 module.exports = function (app) {
-  app.use('/', router);
+    app.use('/', router);
 };
 
 router.get('/', function (req, res, next) {
-    scrapper.load(function(err, cars){
-        carSrv.saveCars(cars, function(){
-            res.render('index', {
-                title: 'Generator-Express MVC',
-                articles: cars
-            });
-        });
-    })
+    configSrv.getConfigs().then(function (configs) {
+        for (var i = 0; i < configs.length; i++) {
+            var config = configs[i];
+            scrapper.load(config, function (err, cars) {
+                carSrv.saveCars(cars, function () {
+                    res.render('index', {
+                        title: 'Generator-Express MVC',
+                        articles: cars
+                    });
+                });
+            })
+        }
+    }).catch(function (err) {
+        console.log(err);
+    });
 
 });

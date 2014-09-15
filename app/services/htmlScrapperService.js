@@ -4,7 +4,8 @@
 "use strict";
 var request = require('request');
 var cheerio = require('cheerio');
-var configSrv = require('./configService');
+var q = require('q');
+
 //
 //var config = {
 //    name:'Автобазар (после ДТП)',
@@ -18,38 +19,37 @@ var configSrv = require('./configService');
 //    containerSelector: '.res_item',
 //    photoSelector: '.photo'
 //};
-module.exports.load = function (callback) {
+function extractCar($, element, config) {
+    var $e = $(element);
+    var $title = $e.find(config.titleSelector);
+    var $priceUSD = $e.find(config.priceUSDSelector);
+    var $priceUAH = $e.find(config.priceUAHSelector);
+    var $city = $e.find(config.citySelector);
+    var $photo = $e.find(config.photoSelector);
+    var $relativeUrl = $e.find(config.urlSelector);
+    var car = {
+        title: $title.text().trim(),
+        priceUSD: parseFloat($priceUSD.text().trim()),
+        priceUAH: parseFloat($priceUAH.text().trim()),
+        city: $city.text().trim(),
+        relativeUrl: $relativeUrl.attr('href').trim(),
+        photos: [$photo.attr('src')],
+        source: config.name
+    };
+    return car;
+}
+module.exports.load = function (config, callback) {
+    var url = config.host + config.searchUrl;
+    //q.nfcall(request)
+    request(url, function (error, response, body) {
+        var $ = cheerio.load(body);
+        var cars = [];
+        $(config.containerSelector).each(function (index, element) {
+            var car = extractCar($, element, config);
+            cars.push(car);
+        });
+        callback(error, cars);
+    })
 
-    configSrv.getConfigs().then(function (configs) {
-        for (var i = 0; i < configs.length; i++) {
-            var config = configs[i];
-            var url = config.host + config.searchUrl;
-            request(url, function (error, response, body) {
-                var $ = cheerio.load(body);
-                var cars = [];
-                $(config.containerSelector).each(function (index, element) {
-                    var $e = $(element);
-                    var $title = $e.find(config.titleSelector);
-                    var $priceUSD = $e.find(config.priceUSDSelector);
-                    var $priceUAH = $e.find(config.priceUAHSelector);
-                    var $city = $e.find(config.citySelector);
-                    var $photo = $e.find(config.photoSelector);
-                    var $relativeUrl = $e.find(config.urlSelector);
-                    cars.push({
-                        title: $title.text().trim(),
-                        priceUSD: parseFloat($priceUSD.text().trim()),
-                        priceUAH: parseFloat($priceUAH.text().trim()),
-                        city: $city.text().trim(),
-                        relativeUrl: $relativeUrl.attr('href').trim(),
-                        photos: [$photo.attr('src')],
-                        source: config.name
-                    })
-                });
-                callback(error, cars);
-            })
-        }
-    }).catch(function (err) {
-        console.log(err);
-    });
 
 };
