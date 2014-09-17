@@ -12,8 +12,9 @@ router.get('/', function (req, res, next) {
     configSrv.getConfigs().then(function (configs) {
         for (var i = 0; i < configs.length; i++) {
             var config = configs[i];
-            scrapper.load(config, function (err, cars) {
-                carSrv.saveCars(cars, function () {
+            scrapper.load(config)
+                .then(carSrv.saveCars)
+                .then(function (cars) {
                     res.render('index', {
                         title: 'Generator-Express MVC',
                         articles: cars

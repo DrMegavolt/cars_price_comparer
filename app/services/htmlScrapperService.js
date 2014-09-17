@@ -4,7 +4,7 @@
 "use strict";
 var request = require('request');
 var cheerio = require('cheerio');
-var q = require('q');
+var RSVP = require('rsvp');
 
 //
 //var config = {
@@ -26,16 +26,14 @@ function extractCar($, element, config) {
     var $priceUAH = $e.find(config.priceUAHSelector);
     var $city = $e.find(config.citySelector);
     var $photo = $e.find(config.photoSelector);
-    var $sellerName = $e.find(config.sellerNameSelector);
-    var $sellerPhone = $e.find(config.sellerPhoneSelector);
+
     var $relativeUrl = $e.find(config.urlSelector);
     var car = {
         title: $title.text().trim(),
         priceUSD: parseFloat($priceUSD.text().trim()),
         priceUAH: parseFloat($priceUAH.text().trim()),
         city: $city.text().trim(),
-        seller: $sellerName.text().trim(),
-        phone: $sellerPhone.text().trim(),
+        site: config.host,
         relativeUrl: $relativeUrl.attr('href').trim(),
         photos: [$photo.attr('src')],
         source: config.name
@@ -44,16 +42,35 @@ function extractCar($, element, config) {
 }
 module.exports.load = function (config, callback) {
     var url = config.host + config.searchUrl;
-    //q.nfcall(request)
-    request(url, function (error, response, body) {
-        var $ = cheerio.load(body);
-        var cars = [];
-        $(config.containerSelector).each(function (index, element) {
-            var car = extractCar($, element, config);
-            cars.push(car);
-        });
-        callback(error, cars);
+    return new RSVP.Promise(function (res, rej) {
+        request(url, function (error, response, body) {
+            if (error) {
+                rej(error);
+                return;
+            }
+            var $ = cheerio.load(body);
+            var cars = [];
+            $(config.containerSelector).each(function (index, element) {
+                var car = extractCar($, element, config);
+                cars.push(car);
+            });
+
+            var promises = cars.map(function (car) {
+                return new RSVP.Promise(function (resolve, reject) {
+                    request(car.site + car.relativeUrl, function (error, response, body) {
+                        if (error) {
+                            reject(error);
+                        }
+                        var $ = cheerio.load(body);
+                        var $sellerName = $(config.sellerNameSelector);
+                        var $sellerPhone = $(config.sellerPhoneSelector);
+                        car.seller = $sellerName.text().trim();
+                        car.phone = $sellerPhone.text().trim();
+                        resolve(car);
+                    })
+                });
+            })
+            res(RSVP.all(promises))
+        })
     })
-
-
 };
