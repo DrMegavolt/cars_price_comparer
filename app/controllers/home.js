@@ -19,6 +19,8 @@ router.get('/', function (req, res, next) {
                         title: 'Generator-Express MVC',
                         articles: cars
                     });
+                }).catch(function (err) {
+                    console.log(err);
                 });
         }
     }).catch(function (err) {

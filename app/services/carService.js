@@ -8,17 +8,21 @@ module.exports.saveCars = function (cars) {
             CarModel.findOne({relativeUrl: c.relativeUrl}).exec(function (err, car) {
                 if (err) {
                     reject(err)
+                    return;
                 }
-                if (!car) { // create only if not exist
-                    //TODO:TEST
+                if (car) {
+                    resolve(car);
+                    return;
+                }// create only if not exist
+                resolve(new RSVP.Promise(function (res, rej) {
                     CarModel.create(c, function (err) {
                         if (err) {
-                            reject(err);
+                            rej(err);
                         } else {
-                            resolve(car)
+                            res(c)
                         }
                     })
-                }
+                }))
             })
         })
     })
