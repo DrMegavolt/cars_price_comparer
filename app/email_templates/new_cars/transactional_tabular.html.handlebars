@@ -566,11 +566,11 @@ h4, .h4 {
                                                             </th>
                                                             <th scope="col" valign="top" width="25%"
                                                                 class="dataTableHeading">
-                                                                EMAILS SENT
+                                                                {{seller}} {{phone}}
                                                             </th>
                                                             <th scope="col" valign="top" width="25%"
                                                                 class="dataTableHeading">
-                                                                EMAIL SUBJECT
+                                                                ${{priceUSD}}
                                                             </th>
                                                         </tr>
                                                         <!--title: String,-->
@@ -582,7 +582,9 @@ h4, .h4 {
                                                         <!--photos:Array,-->
                                                             <tr>
                                                                 <td valign="top" class="dataTableContent">
-                                                                    SEP 29, 2012
+                                                                    {{#each photos}}
+                                                                    <img src="{{this}}" alt=""/>
+                                                                    {{/each}}
                                                                 </td>
                                                                 <td valign="top" class="dataTableContent">
                                                                     2,760
