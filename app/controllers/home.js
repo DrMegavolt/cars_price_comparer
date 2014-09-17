@@ -20,10 +20,8 @@ router.get('/', function (req, res, next) {
                         articles: cars
                     });
                 });
-            })
         }
     }).catch(function (err) {
         console.log(err);
-    });
-
+    })
 });
