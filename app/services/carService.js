@@ -32,6 +32,10 @@ module.exports.saveCars = function (cars) {
 }
 
 module.exports.getLatestCars = function (timeToNow) {
-    "use strict";
-    return q.nfcall(CarModel.find, {created: {$gte: timeToNow}});
+    return new RSVP.Promise(function (resolve, reject) {
+        CarModel.find({created: {$gte: timeToNow}},function(err, cars){
+            if (err) { return reject(err);}
+            return resolve(cars);
+        })
+    });
 }

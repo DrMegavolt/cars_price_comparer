@@ -16,8 +16,7 @@ describe('htmlScrapperService', function () {
         "photoSelector" : ".photo"
     }
     it('should load first page of avtobazar', function (done) {
-        srv.load(config, function (error, cars) {
-            (error === null).should.be.true;
+        srv.load(config).then(function (cars) {
             cars.should.have.length(21);
             done();
         });
