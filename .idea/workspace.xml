@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/carService.js" afterPath="$PROJECT_DIR$/app/services/carService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/email-service-test.js" afterPath="$PROJECT_DIR$/tests/email-service-test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/emailService.js" afterPath="$PROJECT_DIR$/app/services/emailService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/scrapper-service-test.js" afterPath="$PROJECT_DIR$/tests/scrapper-service-test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/htmlScrapperService.js" afterPath="$PROJECT_DIR$/app/services/htmlScrapperService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars" afterPath="$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="price_comparer.iws" />
@@ -30,21 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="htmlScrapperService.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="htmlScrapperService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/htmlScrapperService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="916" max-vertical-offset="1215">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/gulp/node_modules/vinyl-fs/node_modules/mkdirp/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1545">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.74916387" vertical-offset="346" max-vertical-offset="1215">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -56,38 +47,6 @@
             <state vertical-scroll-proportion="7.5" vertical-offset="915" max-vertical-offset="1425">
               <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/request/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="2400">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-              <folding>
-                <marker date="1409863047000" expanded="false" signature="0:621" placeholder="//..." />
-                <marker date="1409863047000" expanded="true" signature="1199:1439" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="1483:1772" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="1801:1912" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="1962:2127" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="2178:2458" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="2509:2675" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="2725:2890" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="2942:3109" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3159:3327" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3355:3381" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3415:3446" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3497:4742" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3531:4355" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3580:3673" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3723:3850" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="3894:4351" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="4144:4291" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="4178:4218" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="4224:4283" placeholder="{...}" />
-                <marker date="1409863047000" expanded="true" signature="4798:5013" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,49 +64,9 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6666665" vertical-offset="368" max-vertical-offset="690">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/cheerio/lib/parse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1455">
-              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-              <folding>
-                <marker date="1402355555000" expanded="false" signature="0:27" placeholder="/*...*/" />
-                <marker date="1402355555000" expanded="true" signature="102:116" placeholder="/*...*/" />
-                <marker date="1402355555000" expanded="true" signature="171:437" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="253:361" placeholder="{&quot;name&quot;: 'root'...}" />
-                <marker date="1402355555000" expanded="true" signature="501:720" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="619:673" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="679:703" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="723:778" placeholder="/*...*/" />
-                <marker date="1402355555000" expanded="true" signature="831:1826" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="922:954" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="960:984" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1047:1806" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1287:1484" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1366:1411" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1433:1478" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1502:1585" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1591:1634" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1678:1737" placeholder="{...}" />
-                <marker date="1402355555000" expanded="true" signature="1743:1802" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -165,8 +84,38 @@
       <file leaf-file-name="carService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/carService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="690">
-              <caret line="33" column="50" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="690">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="645">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="express.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/express.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="226" max-vertical-offset="990">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -185,8 +134,18 @@
       <file leaf-file-name="emailService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="840">
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runnable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mocha/lib/runnable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2541" max-vertical-offset="4035">
+              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -205,21 +164,22 @@
       <file leaf-file-name="transactional_tabular.html.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8563" max-vertical-offset="10185">
-              <caret line="578" column="42" selection-start-line="578" selection-start-column="42" selection-end-line="578" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="-4.36" vertical-offset="8632" max-vertical-offset="10110">
+              <caret line="590" column="26" selection-start-line="590" selection-start-column="26" selection-end-line="590" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email-service-test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="email-service-test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/email-service-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5356037" vertical-offset="187" max-vertical-offset="555">
-              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-              <folding>
-                <element signature="e#159#551#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="450">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,7 +187,7 @@
       <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="525">
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="525">
               <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding />
             </state>
@@ -255,21 +215,21 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.gulpfile.js" />
         <option value="$PROJECT_DIR$/tests/test.js" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/services/processor.js" />
         <option value="$PROJECT_DIR$/app/services/configService.js" />
-        <option value="$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars" />
         <option value="$PROJECT_DIR$/app/models/car.js" />
         <option value="$PROJECT_DIR$/app/models/config.js" />
         <option value="$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html" />
-        <option value="$PROJECT_DIR$/app/services/htmlScrapperService.js" />
         <option value="$PROJECT_DIR$/app/controllers/home.js" />
         <option value="$PROJECT_DIR$/app/services/carService.js" />
         <option value="$PROJECT_DIR$/tests/scrapper-service-test.js" />
-        <option value="$PROJECT_DIR$/app/services/emailService.js" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/tests/email-service-test.js" />
+        <option value="$PROJECT_DIR$/app/services/emailService.js" />
+        <option value="$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars" />
+        <option value="$PROJECT_DIR$/app/services/htmlScrapperService.js" />
       </list>
     </option>
   </component>
@@ -292,6 +252,9 @@
         <tasks>
           <GulpTaskState>
             <task-name>default</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>email-test</task-name>
           </GulpTaskState>
         </tasks>
       </GulpfileState>
@@ -543,7 +506,7 @@
       <recent name="$PROJECT_DIR$/app/models" />
     </key>
   </component>
-  <component name="RunManager" selected="Gulp.js.default">
+  <component name="RunManager" selected="Gulp.js.email-test">
     <configuration default="false" name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-options>--harmony</node-options>
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
@@ -555,6 +518,20 @@
       <RunnerSettings RunnerId="Js.BuildTools.Gulp" />
       <RunnerSettings RunnerId="node-js.debug.program.runner" />
       <ConfigurationWrapper RunnerId="Js.BuildTools.Gulp" />
+      <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="email-test" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-options>--harmony</node-options>
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>email-test</task>
+      </tasks>
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs>
+        <env name="ENV" value="test" />
+      </envs>
+      <RunnerSettings RunnerId="node-js.debug.program.runner" />
       <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
       <method />
     </configuration>
@@ -626,14 +603,16 @@
       <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Gulp.js.default" />
-      <item index="1" class="java.lang.String" itemvalue="Mocha.mocha" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.node" />
+      <item index="1" class="java.lang.String" itemvalue="Gulp.js.email-test" />
+      <item index="2" class="java.lang.String" itemvalue="Mocha.mocha" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.node" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Gulp.js.default" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.email-test" />
+        <item index="1" class="java.lang.String" itemvalue="Gulp.js.default" />
       </list>
     </recent_temporary>
   </component>
@@ -756,18 +735,24 @@
       <option name="project" value="LOCAL" />
       <updated>1410994519974</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="test to get real cars">
+      <created>1410995278123</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1410995278123</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.413522" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41426402" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.413522" sideWeight="0.49946752" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.413522" sideWeight="0.5005325" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -777,7 +762,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25416997" sideWeight="0.49842766" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37578616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37578616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -814,7 +799,8 @@
     <MESSAGE value="template" />
     <MESSAGE value="rsvp promises" />
     <MESSAGE value="save data and prefilter already added" />
-    <option name="LAST_COMMIT_MESSAGE" value="save data and prefilter already added" />
+    <MESSAGE value="test to get real cars" />
+    <option name="LAST_COMMIT_MESSAGE" value="test to get real cars" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -829,8 +815,13 @@
           <line>22</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tests/email-service-test.js</url>
+          <line>18</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="60" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -949,14 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="501" max-vertical-offset="990">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="454">
@@ -993,14 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mocha/lib/runnable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2189" max-vertical-offset="4035">
-          <caret line="171" column="3" selection-start-line="171" selection-start-column="3" selection-end-line="171" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mocha/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="360">
@@ -1008,26 +983,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6153846" vertical-offset="30" max-vertical-offset="1020">
           <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1180,40 +1139,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8563" max-vertical-offset="10185">
-          <caret line="578" column="42" selection-start-line="578" selection-start-column="42" selection-end-line="578" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/request/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="2400">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
           <folding>
-            <marker date="1409863047000" expanded="false" signature="0:621" placeholder="//..." />
-            <marker date="1409863047000" expanded="true" signature="1199:1439" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="1483:1772" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="1801:1912" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="1962:2127" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="2178:2458" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="2509:2675" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="2725:2890" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="2942:3109" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3159:3327" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3355:3381" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3415:3446" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3497:4742" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3531:4355" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3580:3673" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3723:3850" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="3894:4351" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="4144:4291" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="4178:4218" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="4224:4283" placeholder="{...}" />
-            <marker date="1409863047000" expanded="true" signature="4798:5013" placeholder="{...}" />
+            <marker date="1409863047000" expanded="false" signature="-1:-1" placeholder="//..." />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409863047000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1223,25 +1174,25 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1455">
           <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
           <folding>
-            <marker date="1402355555000" expanded="false" signature="0:27" placeholder="/*...*/" />
-            <marker date="1402355555000" expanded="true" signature="102:116" placeholder="/*...*/" />
-            <marker date="1402355555000" expanded="true" signature="171:437" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="253:361" placeholder="{&quot;name&quot;: 'root'...}" />
-            <marker date="1402355555000" expanded="true" signature="501:720" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="619:673" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="679:703" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="723:778" placeholder="/*...*/" />
-            <marker date="1402355555000" expanded="true" signature="831:1826" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="922:954" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="960:984" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1047:1806" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1287:1484" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1366:1411" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1433:1478" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1502:1585" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1591:1634" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1678:1737" placeholder="{...}" />
-            <marker date="1402355555000" expanded="true" signature="1743:1802" placeholder="{...}" />
+            <marker date="1402355555000" expanded="false" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'root'...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1402355555000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1270,34 +1221,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/car.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="375">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/request/request.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3429" max-vertical-offset="22485">
           <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/htmlScrapperService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="916" max-vertical-offset="1215">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1310,14 +1237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="525">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/scrapper-service-test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="435">
@@ -1326,29 +1245,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mocha/lib/runnable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2541" max-vertical-offset="4035">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="525">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/car.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="375">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="501" max-vertical-offset="990">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="645">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="840">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/carService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="690">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="690">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/email-service-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5356037" vertical-offset="187" max-vertical-offset="555">
-          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="450">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.36" vertical-offset="8632" max-vertical-offset="10110">
+          <caret line="590" column="26" selection-start-line="590" selection-start-column="26" selection-end-line="590" selection-end-column="26" />
           <folding>
-            <element signature="e#159#551#0" expanded="false" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/htmlScrapperService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74916387" vertical-offset="346" max-vertical-offset="1215">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

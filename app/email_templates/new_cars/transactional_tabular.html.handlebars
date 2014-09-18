@@ -244,7 +244,7 @@ h4, .h4 {
 
 #headerImage {
     height: auto;
-    max-width: 600px !important;
+    max-width: 800px !important;
 }
 
 /* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
@@ -511,11 +511,11 @@ h4, .h4 {
     <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
         <tr>
             <td align="center" valign="top" style="padding-top:20px;">
-                <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+                <table border="0" cellpadding="0" cellspacing="0" width="800" id="templateContainer">
                     <!--<tr>-->
                     <!--<td align="center" valign="top">-->
                     <!--&lt;!&ndash; // Begin Template Header \\ &ndash;&gt;-->
-                    <!--<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateHeader">-->
+                    <!--<table border="0" cellpadding="0" cellspacing="0" width="800" id="templateHeader">-->
                     <!--<tr>-->
                     <!--<td class="headerContent">-->
                     <!---->
@@ -532,7 +532,7 @@ h4, .h4 {
                     <tr>
                         <td align="center" valign="top">
                             <!-- // Begin Template Body \\ -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateBody">
+                            <table border="0" cellpadding="0" cellspacing="0" width="800" id="templateBody">
                                 <tr>
                                     <td valign="top">
 
@@ -545,41 +545,36 @@ h4, .h4 {
                                                     </div>
                                                 </td>
                                             </tr>
-                                            {{#each sources}}
+                                            {{#sources}}
                                             <tr>
                                                 <td valign="top" class="bodyContent">
                                                     <div>
-                                                        <h4 class="h4">Автобазар</h4>
+                                                        <h4 class="h4">{{name}}</h4>
                                                     </div>
                                                 </td>
                                             </tr>
-                                                {{#each this.cars}}
+                                                {{#each cars}}
                                                 <tr>
                                                 <td valign="top" style="padding-top:0; padding-bottom:0;">
-                                                   -->
                                                     <table border="0" cellpadding="10" cellspacing="0" width="100%"
                                                            class="templateDataTable">
                                                         <tr>
+                                                            <th scope="col" valign="top" width="25%"
+                                                                class="dataTableHeading">
+                                                                {{log this}}
+                                                                <a href="{{this.site}}{{relativeUrl}}"> {{title}}</a>
+                                                            </th>
                                                             <th scope="col" valign="top" width="50%"
                                                                 class="dataTableHeading">
-                                                                <a href="{{site}}{{relativeUrl}}"> {{title}}</a>
+                                                                {{seller}} {{phone}} {{city}}
                                                             </th>
                                                             <th scope="col" valign="top" width="25%"
                                                                 class="dataTableHeading">
-                                                                {{seller}} {{phone}}
-                                                            </th>
-                                                            <th scope="col" valign="top" width="25%"
-                                                                class="dataTableHeading">
-                                                                ${{priceUSD}}
+                                                                ${{priceUSD}} <br/>
+                                                                {{priceUAH}} грн.
                                                             </th>
                                                         </tr>
-                                                        <!--title: String,-->
-                                                        <!--relativeUrl: String,-->
-                                                        <!--site: String,-->
-                                                        <!--priceUSD: Number,-->
-                                                        <!--priceUAH: Number,-->
-                                                        <!--city: String,-->
-                                                        <!--photos:Array,-->
+
                                                             <tr>
                                                                 <td valign="top" class="dataTableContent">
                                                                     {{#each photos}}
@@ -587,7 +582,7 @@ h4, .h4 {
                                                                     {{/each}}
                                                                 </td>
                                                                 <td valign="top" class="dataTableContent">
-                                                                    2,760
+                                                                    {{shortDescription}}
                                                                 </td>
                                                                 <td valign="top" class="dataTableContent">
                                                                     3-MONTH PASSWORD UPDATE
@@ -597,7 +592,7 @@ h4, .h4 {
                                                     </td>
                                                 </tr>
                                                     {{/each}}
-                                                {{/each}}
+                                                {{/sources}}
 
                                                 <tr>
                                                     <td align="center" valign="top" style="padding-top:0;">
@@ -625,7 +620,7 @@ h4, .h4 {
                     <tr>
                         <td align="center" valign="top">
                             <!-- // Begin Template Footer \\ -->
-                            <table border="0" cellpadding="10" cellspacing="0" width="600" id="templateFooter">
+                            <table border="0" cellpadding="10" cellspacing="0" width="800" id="templateFooter">
                                 <tr>
                                     <td valign="top" class="footerContent">
 
@@ -633,7 +628,7 @@ h4, .h4 {
                                         <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                             <tr>
                                                 <td valign="top">
-                                                    <div mc:edit="std_footer">
+                                                    <div>
                                                         <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All
                                                             rights reserved.</em>
                                                         <br/>

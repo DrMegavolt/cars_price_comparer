@@ -13,7 +13,13 @@ var transporter = nodemailer.createTransport({
     }
 })
 module.exports.sendNewCarsEmail = function (cars, callback) {
-    emailTemplates(templatesDir, function (err, template) {
+    emailTemplates(templatesDir,{
+        helpers:{
+            log:function(something) {
+                return console.log(something);
+            }
+        }
+    }, function (err, template) {
 
 
 

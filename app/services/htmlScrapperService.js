@@ -30,8 +30,8 @@ function extractCar($, element, config) {
     var $relativeUrl = $e.find(config.urlSelector);
     var car = {
         title: $title.text().trim(),
-        priceUSD: parseFloat($priceUSD.text().trim()),
-        priceUAH: parseFloat($priceUAH.text().trim()),
+        priceUSD: parseFloat($priceUSD.text().replace(/[^\d]/g, '')),
+        priceUAH: parseFloat($priceUAH.text().replace(/[^\d]/g, '')),
         city: $city.text().trim(),
         site: config.host,
         relativeUrl: $relativeUrl.attr('href').trim(),
