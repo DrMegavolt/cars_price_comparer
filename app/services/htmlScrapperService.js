@@ -64,8 +64,12 @@ module.exports.load = function (config, callback) {
                         var $ = cheerio.load(body);
                         var $sellerName = $(config.sellerNameSelector);
                         var $sellerPhone = $(config.sellerPhoneSelector);
+                        var $description = $(config.descriptionSelector);
+                        var $shortDescription = $(config.shortDescriptionSelector);
                         car.seller = $sellerName.text().trim();
                         car.phone = $sellerPhone.text().trim();
+                        car.description = $description.html();
+                        car.shortDescription = $shortDescription.text().trim();
                         resolve(car);
                     })
                 });

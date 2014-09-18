@@ -15,6 +15,8 @@ module.exports.configSchema = new Schema({
     urlSelector: String,
     priceUSDSelector: String,
     containerSelector: String,
-    photoSelector:String
+    photoSelector:String,
+    descriptionSelector: String,
+    shortDescriptionSelector: String
 });
 

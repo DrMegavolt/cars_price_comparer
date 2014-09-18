@@ -13,6 +13,8 @@ module.exports.carSchema = new Schema({
     priceUSD: Number,
     priceUAH: Number,
     city: String,
+    description: String,
+    shortDescription: String,
     photos:Array,
     created:  {type: Date, default: Date.now}
 });
