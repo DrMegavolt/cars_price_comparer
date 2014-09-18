@@ -60,6 +60,7 @@ module.exports.load = function (config, callback) {
                     request(car.site + car.relativeUrl, function (error, response, body) {
                         if (error) {
                             reject(error);
+                            return;
                         }
                         var $ = cheerio.load(body);
                         var $sellerName = $(config.sellerNameSelector);
@@ -68,7 +69,7 @@ module.exports.load = function (config, callback) {
                         var $shortDescription = $(config.shortDescriptionSelector);
                         car.seller = $sellerName.text().trim();
                         car.phone = $sellerPhone.text().trim();
-                        car.description = $description.html();
+                        car.description = $description.text().trim();
                         car.shortDescription = $shortDescription.text().trim();
                         resolve(car);
                     })
