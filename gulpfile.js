@@ -11,6 +11,15 @@ gulp.task('default', function () {
         }));
 });
 
+gulp.task('ria-parser', function () {
+    return gulp.src('tests/*ria.js', {read: false})
+        .pipe(mocha({
+            reporter: 'spec',
+            should:require('should'),
+            expect:require('chai').expect,
+            timeout:15000
+        }));
+});
 
 gulp.task('email-test', function () {
     return gulp.src('tests/email*.js', {read: false})

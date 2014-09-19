@@ -40,7 +40,7 @@ function extractCar($, element, config) {
     };
     return car;
 }
-module.exports.load = function (config, callback) {
+module.exports.load = function (config) {
     var url = config.host + config.searchUrl;
     return new RSVP.Promise(function (res, rej) {
         request(url, function (error, response, body) {
