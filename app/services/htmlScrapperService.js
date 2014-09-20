@@ -4,6 +4,7 @@
 "use strict";
 var request = require('request');
 var cheerio = require('cheerio');
+var carDetailsSrv = require('./htmlCarDetailsScrapperService');
 var RSVP = require('rsvp');
 
 //
@@ -56,24 +57,7 @@ module.exports.load = function (config) {
             });
 
             var promises = cars.map(function (car) {
-                return new RSVP.Promise(function (resolve, reject) {
-                    request(car.site + car.relativeUrl, function (error, response, body) {
-                        if (error) {
-                            reject(error);
-                            return;
-                        }
-                        var $ = cheerio.load(body);
-                        var $sellerName = $(config.sellerNameSelector);
-                        var $sellerPhone = $(config.sellerPhoneSelector);
-                        var $description = $(config.descriptionSelector);
-                        var $shortDescription = $(config.shortDescriptionSelector);
-                        car.seller = $sellerName.text().trim();
-                        car.phone = $sellerPhone.text().trim();
-                        car.description = $description.text().trim();
-                        car.shortDescription = $shortDescription.text().trim();
-                        resolve(car);
-                    })
-                });
+                return carDetailsSrv.load(config,car);
             })
             res(RSVP.all(promises))
         })
