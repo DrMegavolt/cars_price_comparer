@@ -1,8 +1,10 @@
 "use strict"
 var request = require('request');
 var RSVP = require('rsvp');
+var carDetailsSrv = require('./ajaxCarDetailsScrapperService');
 
-var byString = function(o, s) {
+Object.prototype.byString = function( s) {
+    var o = this;
     s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
     s = s.replace(/^\./, '');           // strip a leading dot
     var a = s.split('.');
@@ -14,7 +16,7 @@ var byString = function(o, s) {
             return;
         }
     }
-    return o;
+    return o || '';
 }
 module.exports.load = function (config) {
     var url = config.host + config.searchUrl;
@@ -25,11 +27,9 @@ module.exports.load = function (config) {
                 return;
             }
             var json = JSON.parse(body);
-            var ids = byString(json, config.idsSelector);
+            var ids = json.byString(config.idsSelector);
             var promises = ids.map(function (id) {
-                return new RSVP.Promise(function (resolve, reject) {
-
-                })
+                return carDetailsSrv.load(config,id);
             });
             res(RSVP.all(promises));
 

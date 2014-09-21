@@ -1,6 +1,6 @@
 var request = require('request');
 var RSVP = require('rsvp');
-
+var cheerio = require('cheerio');
 module.exports.load = function(config, car){
     return new RSVP.Promise(function (resolve, reject) {
         request(car.site + car.relativeUrl, function (error, response, body) {

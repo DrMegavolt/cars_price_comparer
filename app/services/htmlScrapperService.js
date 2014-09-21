@@ -6,20 +6,6 @@ var request = require('request');
 var cheerio = require('cheerio');
 var carDetailsSrv = require('./htmlCarDetailsScrapperService');
 var RSVP = require('rsvp');
-
-//
-//var config = {
-//    name:'Автобазар (после ДТП)',
-//    host:'http://avtobazar.ua',
-//    searchUrl: '/poisk/avto/?country1=1911&period=168&show_only=all&currency=1915&after_dtp=yes_only&no_customs=no&in_credit=yes&exchange=yes&rent=no&autosalon_own=yes&order=-date_last_modify',
-//    titleSelector: '.prod',
-//    citySelector: '.city',
-//    priceUAHSelector: '.price',
-//    urlSelector: '.url',
-//    priceUSDSelector: '.calc-price',
-//    containerSelector: '.res_item',
-//    photoSelector: '.photo'
-//};
 function extractCar($, element, config) {
     var $e = $(element);
     var $title = $e.find(config.titleSelector);
