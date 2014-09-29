@@ -545,15 +545,16 @@ h4, .h4 {
                                                     </div>
                                                 </td>
                                             </tr>
-                                            {{#sources}}
+                                            {{log this}}
+                                            {{#each src}}
                                             <tr>
                                                 <td valign="top" class="bodyContent">
                                                     <div>
-                                                        <h4 class="h4">{{name}}</h4>
+                                                        <h4 class="h4">{{@key}}</h4>
                                                     </div>
                                                 </td>
                                             </tr>
-                                                {{#each cars}}
+                                                {{#each this}}
                                                 <tr>
                                                 <td valign="top" style="padding-top:0; padding-bottom:0;">
                                                     <table border="0" cellpadding="10" cellspacing="0" width="100%"
@@ -561,7 +562,6 @@ h4, .h4 {
                                                         <tr>
                                                             <th scope="col" valign="top" width="25%"
                                                                 class="dataTableHeading">
-                                                                {{log this}}
                                                                 <a href="{{this.site}}{{relativeUrl}}"> {{title}}</a>
                                                             </th>
                                                             <th scope="col" valign="top" width="50%"
@@ -581,10 +581,8 @@ h4, .h4 {
                                                                     <img src="{{this}}" alt=""/>
                                                                     {{/each}}
                                                                 </td>
-                                                                <td valign="top" class="dataTableContent">
+                                                                <td rowspan="2" valign="top" class="dataTableContent">
                                                                     <!--{{TBDdescription}}-->
-                                                                </td>
-                                                                <td valign="top" class="dataTableContent">
                                                                     {{shortDescription}}
                                                                 </td>
                                                             </tr>
@@ -592,7 +590,7 @@ h4, .h4 {
                                                     </td>
                                                 </tr>
                                                     {{/each}}
-                                                {{/sources}}
+                                                {{/each}}
 
                                                 <tr>
                                                     <td align="center" valign="top" style="padding-top:0;">

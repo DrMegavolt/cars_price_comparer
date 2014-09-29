@@ -12,28 +12,23 @@ var transporter = nodemailer.createTransport({
         pass: 'F1ary_zUVA671Lb-7BQ-zg'
     }
 })
+
 module.exports.sendNewCarsEmail = function (cars, callback) {
-    emailTemplates(templatesDir,{
-        helpers:{
-            log:function(something) {
+    emailTemplates(templatesDir, {
+        helpers: {
+            log: function (something) {
                 return console.log(something);
             }
         }
     }, function (err, template) {
 
 
-
-
-        var locals = {sources:[
-            {
-                name: 'Автобазар',
-                cars: cars
-            },
-            {
-                name: 'AutoRia',
-                cars: cars
+        var locals = {
+            src: {
+                'Автобазар': cars
             }
-        ] };
+        }
+
 
         template('new_cars', locals, function (err, html, text) {
             if (err) {

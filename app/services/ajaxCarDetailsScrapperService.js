@@ -25,7 +25,7 @@ module.exports.load = function (config, id) {
             var json = JSON.parse(body);
 
             var photoUrl = getPropertyByString(json,config.photoSelector);
-            photoUrl = photoUrl.indexOf('://')?photoUrl:config.host + photoUrl;
+            photoUrl = photoUrl.indexOf('://')?('http://cdn.img.ria.com/photosnew' +'/'+ photoUrl).replace('.jpg', 'bx.jpg'):photoUrl;
             var car = {
                 title: getPropertyByString(json,config.titleSelector),
                 priceUSD: parseFloat(getPropertyByString(json,config.priceUSDSelector)) || 0,
