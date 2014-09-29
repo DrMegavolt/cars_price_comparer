@@ -1,6 +1,7 @@
 /**
  * Created by drmegavolt on 9/11/14.
  */
+var RSVP = require('rsvp');
 var carSrv = require('../services/carService');
 var configSrv = require('../services/configService');
 var scrapper = require('../services/htmlScrapperService');
@@ -13,7 +14,9 @@ module.exports.process = function (req, res, next) {
         for (var i = 0; i < configs.length; i++) {
             var config = configs[i];
             var loader = config.listRequestMode === "HTML" ? scrapper : ajaxScrapper;
-            promises.push(loader.load(config).then(carSrv.saveCars));
+            promises.push(loader.load(config).then(carSrv.saveCars).catch(function (err) {
+                console.log(err);
+            }));
         }
         return RSVP.all(promises)
     }).then(function (cars) {

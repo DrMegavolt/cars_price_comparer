@@ -10,6 +10,7 @@ module.exports.configSchema = new Schema({
     itemRequestMode:String,
     idsSelector:String,
     searchUrl: String,
+    itemUrl: String,
     titleSelector: String,
     sellerNameSelector: String,
     sellerPhoneSelector: String,

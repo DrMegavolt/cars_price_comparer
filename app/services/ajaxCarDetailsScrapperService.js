@@ -1,6 +1,19 @@
 var request = require('request');
 var RSVP = require('rsvp');
-
+getPropertyByString = function (o, s) {
+    s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
+    s = s.replace(/^\./, '');           // strip a leading dot
+    var a = s.split('.');
+    while (a.length) {
+        var n = a.shift();
+        if (n in o) {
+            o = o[n];
+        } else {
+            return;
+        }
+    }
+    return o || '';
+}
 module.exports.load = function (config, id) {
 
     return new RSVP.Promise(function (resolve, reject) {
@@ -12,18 +25,18 @@ module.exports.load = function (config, id) {
             var json = JSON.parse(body);
 
             var car = {
-                title: json.byString(config.titleSelector),
-                priceUSD: parseFloat(json.byString(config.priceUSDSelector)),
-                priceUAH: parseFloat(json.byString(config.priceUAHSelector)),
-                city: json.byString(config.citySelector),
+                title: getPropertyByString(json,config.titleSelector),
+                priceUSD: parseFloat(getPropertyByString(json,config.priceUSDSelector)) || 0,
+                priceUAH: parseFloat(getPropertyByString(json,config.priceUAHSelector)) || 0,
+                city: getPropertyByString(json,config.citySelector),
                 site: config.host,
                 relativeUrl: config.urlSelector.replace('{0}', id),
-                photos: [json.byString(config.photoSelector)],
+                photos: [getPropertyByString(json,config.photoSelector)],
                 source: config.name,
-                seller: json.byString(config.sellerNameSelector),
-                phone: json.byString(config.sellerPhoneSelector),
-                description: json.byString(config.descriptionSelector),
-                shortDescription: json.byString(config.shortDescriptionSelector)
+                seller: getPropertyByString(json,config.sellerNameSelector),
+                phone: getPropertyByString(json,config.sellerPhoneSelector),
+                description: getPropertyByString(json,config.descriptionSelector),
+                shortDescription: getPropertyByString(json,config.shortDescriptionSelector)
             };
             resolve(car);
         })
