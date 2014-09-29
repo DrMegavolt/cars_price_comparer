@@ -24,6 +24,8 @@ module.exports.load = function (config, id) {
             }
             var json = JSON.parse(body);
 
+            var photoUrl = getPropertyByString(json,config.photoSelector);
+            photoUrl = photoUrl.indexOf('://')?photoUrl:config.host + photoUrl;
             var car = {
                 title: getPropertyByString(json,config.titleSelector),
                 priceUSD: parseFloat(getPropertyByString(json,config.priceUSDSelector)) || 0,
@@ -31,7 +33,7 @@ module.exports.load = function (config, id) {
                 city: getPropertyByString(json,config.citySelector),
                 site: config.host,
                 relativeUrl: config.urlSelector.replace('{0}', id),
-                photos: [getPropertyByString(json,config.photoSelector)],
+                photos: [photoUrl],
                 source: config.name,
                 seller: getPropertyByString(json,config.sellerNameSelector),
                 phone: getPropertyByString(json,config.sellerPhoneSelector),
