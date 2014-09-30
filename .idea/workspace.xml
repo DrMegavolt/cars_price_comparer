@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/ajaxCarDetailsScrapperService.js" afterPath="$PROJECT_DIR$/app/services/ajaxCarDetailsScrapperService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/emailService.js" afterPath="$PROJECT_DIR$/app/services/emailService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars" afterPath="$PROJECT_DIR$/app/email_templates/new_cars/transactional_tabular.html.handlebars" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="price_comparer.iws" />
@@ -812,7 +809,13 @@
       <option name="project" value="LOCAL" />
       <updated>1412023755798</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="incapsulated all config and parsing logic into processor">
+      <created>1412027900088</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1412027900088</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
