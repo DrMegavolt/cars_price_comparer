@@ -9,7 +9,7 @@ getPropertyByString = function (o, s) {
         if (n in o) {
             o = o[n];
         } else {
-            return;
+            return '';
         }
     }
     return o || '';
