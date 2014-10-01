@@ -19,5 +19,21 @@ var app = express();
 
 require('./config/express')(app, config);
 
-app.listen(config.port);
 
+
+setInterval(function(){
+    "use strict";
+    request('http://car-price-watcher.herokuapp.com', function(err,resp){
+        console.log(resp)
+    })
+
+}, 60000)
+
+setInterval(function(){
+    "use strict";
+    request('http://car-price-watcher.herokuapp.com/email', function(err,resp){
+        console.log(resp)
+    })
+
+}, 60000)
+app.listen(config.port);
