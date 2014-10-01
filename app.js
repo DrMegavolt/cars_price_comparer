@@ -24,7 +24,7 @@ require('./config/express')(app, config);
 setInterval(function(){
     "use strict";
     request('http://car-price-watcher.herokuapp.com', function(err,resp){
-        console.log(resp)
+        console.log(err)
     })
 
 }, 60000)
@@ -32,7 +32,7 @@ setInterval(function(){
 setInterval(function(){
     "use strict";
     request('http://car-price-watcher.herokuapp.com/email', function(err,resp){
-        console.log(resp)
+        console.log(err)
     })
 
 }, 60000)
