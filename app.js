@@ -2,7 +2,7 @@ var express = require('express'),
   config = require('./config/config'),
   fs = require('fs'),
   mongoose = require('mongoose');
-
+var request = require('request');
 mongoose.connect(config.db);
 var db = mongoose.connection;
 db.on('error', function () {
