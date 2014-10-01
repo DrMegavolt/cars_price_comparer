@@ -33,7 +33,7 @@ module.exports.process = function (req, res, next) {
 
 module.exports.sendLatestCars = function () {
 
-    var startdate = new Date(Date.now().getTime() - 30*60000);
+    var startdate = new Date(new Date().getTime() - 30*60000);
     carSrv.getLatestCars(startdate).then(function(cars){
         emailSrv.sendNewCarsEmail(cars, function(err){
             console.log(err);
