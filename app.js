@@ -20,20 +20,20 @@ var app = express();
 require('./config/express')(app, config);
 
 
-
-setInterval(function(){
-    "use strict";
-    request('http://car-price-watcher.herokuapp.com', function(err,resp){
-        console.log(err)
-    })
-
-}, 60000)
-
-setInterval(function(){
-    "use strict";
-    request('http://car-price-watcher.herokuapp.com/email', function(err,resp){
-        console.log(err)
-    })
-
-}, 60000)
+//
+//setInterval(function(){
+//    "use strict";
+//    request('http://car-price-watcher.herokuapp.com', function(err,resp){
+//        console.log(err)
+//    })
+//
+//}, 60000)
+//
+//setInterval(function(){
+//    "use strict";
+//    request('http://car-price-watcher.herokuapp.com/email', function(err,resp){
+//        console.log(err)
+//    })
+//
+//}, 60000)
 app.listen(config.port);
