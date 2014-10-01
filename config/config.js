@@ -29,7 +29,7 @@ var config = {
       name: 'price-comparer'
     },
     port: 3000,
-    db: 'mongodb://localhost/price-comparer-production'
+    db: 'mongodb://admin:zxcv-1234@ds063879.mongolab.com:63879/cars_parser_prod'
     
   }
 };
