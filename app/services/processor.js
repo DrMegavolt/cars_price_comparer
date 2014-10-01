@@ -4,6 +4,7 @@
 var RSVP = require('rsvp');
 var carSrv = require('../services/carService');
 var configSrv = require('../services/configService');
+var emailSrv = require('../services/emailService');
 var scrapper = require('../services/htmlScrapperService');
 var ajaxScrapper = require('../services/ajaxScrapperService');
 module.exports.process = function (req, res, next) {
@@ -31,6 +32,22 @@ module.exports.process = function (req, res, next) {
 }
 
 module.exports.sendLatestCars = function () {
-    "use strict";
+    var now = Date.now();
+
+    var startdate = Date.now();
+
+    var durationInMinutes = 30;
+
+    startdate.setMinutes(now.getMinutes() - durationInMinutes);
+    carSrv.getLatestCars(startdate).then(function(cars){
+        emailSrv.sendNewCarsEmail(cars, function(err){
+            console.log(err);
+            res.render('index', {
+                title: 'EMAIL status ' + err,
+                articles: cars
+            });
+        })
+
+    })
 
 }
