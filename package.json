@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node --harmony app.js"
   },
   "engines": {
     "node": "0.11.x",
