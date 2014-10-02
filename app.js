@@ -20,14 +20,14 @@ var app = express();
 require('./config/express')(app, config);
 
 
-
+var interval = 10*60000;
 setInterval(function(){
     "use strict";
     request('http://car-price-watcher.herokuapp.com', function(err,resp){
         console.log(err)
     })
 
-}, 60000)
+}, interval)
 
 setInterval(function(){
     "use strict";
@@ -35,5 +35,5 @@ setInterval(function(){
         console.log(err)
     })
 
-}, 60000)
+}, interval)
 app.listen(config.port);
