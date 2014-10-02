@@ -32,16 +32,20 @@ module.exports.process = function (req, res, next) {
 }
 
 module.exports.sendLatestCars = function (req, res) {
-    console.log(new Date().getTime() - 30*60000);
-    var startdate = new Date(new Date().getTime() - 3000*60000);
-    carSrv.getLatestCars(startdate).then(function(cars){
-        emailSrv.sendNewCarsEmail(cars, function(err){
-            console.log(err);
-            res.render('index', {
-                title: 'EMAIL status ' + err,
-                articles: cars
-            });
-        })
+    console.log(new Date().getTime() - 30 * 60000);
+    var startdate = new Date(new Date().getTime() - 3000 * 60000);
+    carSrv.getLatestCars(startdate).then(function (cars) {
+        if (cars && cars.length) {
+            emailSrv.sendNewCarsEmail(cars, function (err) {
+                console.log(err);
+                res.render('index', {
+                    title: 'EMAIL status ' + err,
+                    articles: cars
+                });
+            })
+        }else{
+            console.log('no new cars');
+        }
 
     })
 
