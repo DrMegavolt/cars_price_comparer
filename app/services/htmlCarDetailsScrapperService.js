@@ -13,10 +13,15 @@ module.exports.load = function(config, car){
             var $sellerPhone = $(config.sellerPhoneSelector);
             var $description = $(config.descriptionSelector);
             var $shortDescription = $(config.shortDescriptionSelector);
-            car.seller = $sellerName.text().trim();
-            car.phone = $sellerPhone.text().trim();
-            car.description = $description.text().trim();
-            car.shortDescription = $shortDescription.text().trim();
+            try {
+                car.seller = $sellerName.text().trim();
+                car.phone = $sellerPhone.text().trim();
+                car.description = $description.text().trim();
+                car.shortDescription = $shortDescription.text().trim();
+            }
+            catch(error){
+                console.log(error);
+            }
             resolve(car);
         })
     });
