@@ -19,6 +19,7 @@ describe('ajaxScrapperService', function () {
         'name': 'RST.UA (после ДТП)',
         'listRequestMode': 'HTML',
         'itemRequestMode': 'HTML',
+        'encoding':"cp1251",
         'host': 'http://rst.ua',
         'searchUrl': '/oldcars/?task=newresults&make%5B%5D=0&year%5B%5D=0&year%5B%5D=0&price%5B%5D=0&price%5B%5D=0&engine%5B%5D=0&engine%5B%5D=0&gear=0&fuel=0&drive=0&condition=4&from=sform',
         'containerSelector': ".rst-ocb-i",

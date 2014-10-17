@@ -1,13 +1,19 @@
 var request = require('request');
+var Iconv = require('iconv').Iconv;
 var RSVP = require('rsvp');
+var fromEnc = 'utf-8';
+var toEnc = 'utf-8//IGNORE';
 var cheerio = require('cheerio');
 module.exports.load = function(config, car){
+    fromEnc = config.encoding? config.encoding: fromEnc;
+    var translator = new Iconv(fromEnc,toEnc);
     return new RSVP.Promise(function (resolve, reject) {
-        request(car.site + car.relativeUrl, function (error, response, body) {
+        request({url: car.site + car.relativeUrl, encoding:null}, function (error, response, body) {
             if (error) {
                 reject(error);
                 return;
             }
+            body = translator.convert(body).toString();
             var $ = cheerio.load(body);
             var $sellerName = $(config.sellerNameSelector);
             var $sellerPhone = $(config.sellerPhoneSelector);

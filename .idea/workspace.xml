@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/emailService.js" afterPath="$PROJECT_DIR$/app/services/emailService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/htmlCarDetailsScrapperService.js" afterPath="$PROJECT_DIR$/app/services/htmlCarDetailsScrapperService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/htmlScrapperService.js" afterPath="$PROJECT_DIR$/app/services/htmlScrapperService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/scrapper-service-test-rst.js" afterPath="$PROJECT_DIR$/tests/scrapper-service-test-rst.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="price_comparer.iws" />
@@ -30,8 +34,8 @@
       <file leaf-file-name="htmlScrapperService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/htmlScrapperService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="930">
-              <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="545" max-vertical-offset="1035">
+              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -47,21 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/carService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="690">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="htmlCarDetailsScrapperService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/htmlCarDetailsScrapperService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -80,8 +74,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="765">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -97,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrapper-service-test-rst.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scrapper-service-test-rst.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/scrapper-service-test-rst.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="750">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.7723577" vertical-offset="120" max-vertical-offset="765">
+              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -110,7 +104,7 @@
       <file leaf-file-name="processor-test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/processor-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="285">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
@@ -120,8 +114,8 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="840">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="990">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -147,11 +141,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="emailService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5125" vertical-offset="365" max-vertical-offset="765">
-              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="765">
+              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email-service-test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/email-service-test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -170,8 +174,8 @@
       <file leaf-file-name="scrapper-service-test-autobazar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/scrapper-service-test-autobazar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="435">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -215,6 +219,7 @@
     <initial>false</initial>
   </component>
   <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
     <gulpfiles>
       <GulpfileState>
         <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
@@ -232,12 +237,14 @@
             <task-name>rst-parser</task-name>
           </GulpTaskState>
           <GulpTaskState>
+            <task-name>autobazar-parser</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
             <task-name>email-test</task-name>
           </GulpTaskState>
         </tasks>
       </GulpfileState>
     </gulpfiles>
-    <initial>false</initial>
   </component>
   <component name="NodeJsMochaPackageDirSetting">
     <data>$PROJECT_DIR$/node_modules/mocha</data>
@@ -488,7 +495,7 @@
       <recent name="$PROJECT_DIR$/app/models" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.node">
+  <component name="RunManager" selected="Gulp.js.rst-parser">
     <configuration default="false" name="email-test" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-options>--harmony</node-options>
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
@@ -519,20 +526,6 @@
       <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
       <method />
     </configuration>
-    <configuration default="false" name="processor-test" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>processor-test</task>
-      </tasks>
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <RunnerSettings RunnerId="Js.BuildTools.Gulp" />
-      <RunnerSettings RunnerId="node-js.debug.program.runner" />
-      <ConfigurationWrapper RunnerId="Js.BuildTools.Gulp" />
-      <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
-      <method />
-    </configuration>
     <configuration default="false" name="rst-parser" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-options>--harmony</node-options>
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
@@ -547,9 +540,21 @@
       <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
       <method />
     </configuration>
-    <configuration default="false" name="processor-test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="processor-test.js" working-dir="$PROJECT_DIR$/tests">
+    <configuration default="false" name="emailService.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="emailService.js" working-dir="$PROJECT_DIR$/app/services">
       <RunnerSettings RunnerId="Basic" />
       <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="false" name="autobazar-parser" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>autobazar-parser</task>
+      </tasks>
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <RunnerSettings RunnerId="Js.BuildTools.Gulp" />
+      <ConfigurationWrapper RunnerId="Js.BuildTools.Gulp" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -626,22 +631,22 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Gulp.js.email-test" />
-      <item index="1" class="java.lang.String" itemvalue="Gulp.js.ria-parser" />
-      <item index="2" class="java.lang.String" itemvalue="Gulp.js.processor-test" />
-      <item index="3" class="java.lang.String" itemvalue="Gulp.js.rst-parser" />
-      <item index="4" class="java.lang.String" itemvalue="Mocha.mocha" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.node" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.node (1)" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.processor-test.js" />
+      <item index="0" class="java.lang.String" itemvalue="Mocha.mocha" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.node" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.node (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Gulp.js.email-test" />
+      <item index="4" class="java.lang.String" itemvalue="Gulp.js.ria-parser" />
+      <item index="5" class="java.lang.String" itemvalue="Gulp.js.rst-parser" />
+      <item index="6" class="java.lang.String" itemvalue="Node.js.emailService.js" />
+      <item index="7" class="java.lang.String" itemvalue="Gulp.js.autobazar-parser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.processor-test.js" />
-        <item index="1" class="java.lang.String" itemvalue="Gulp.js.rst-parser" />
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.rst-parser" />
+        <item index="1" class="java.lang.String" itemvalue="Gulp.js.autobazar-parser" />
         <item index="2" class="java.lang.String" itemvalue="Gulp.js.ria-parser" />
         <item index="3" class="java.lang.String" itemvalue="Gulp.js.email-test" />
-        <item index="4" class="java.lang.String" itemvalue="Gulp.js.processor-test" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.emailService.js" />
       </list>
     </recent_temporary>
   </component>
@@ -968,31 +973,37 @@
       <option name="project" value="LOCAL" />
       <updated>1412799802910</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="email address formating">
+      <created>1412863587298</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1412863587298</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.49896693" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32704404" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.413522" sideWeight="0.49896693" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.413522" sideWeight="0.50103307" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23113582" sideWeight="0.5015723" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23113582" sideWeight="0.49842766" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37578616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37578616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1037,7 +1048,8 @@
     <MESSAGE value="install packages after deploy" />
     <MESSAGE value="harmony" />
     <MESSAGE value="rst.ua parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="rst.ua parser" />
+    <MESSAGE value="email address formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="email address formating" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,40 +1080,29 @@
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/services/emailService.js</url>
-          <line>34</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/services/emailService.js</url>
-          <line>33</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/tests/scrapper-service-test-ria.js</url>
           <line>27</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/tests/scrapper-service-test-rst.js</url>
-          <line>38</line>
+          <line>39</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/tests/scrapper-service-test-rst.js</url>
-          <line>41</line>
+          <line>42</line>
           <option name="timeStamp" value="138" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="139" />
+      <option name="time" value="144" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
         <watch expression="photoUrl.indexOf('://')" language="JavaScript" />
       </configuration>
       <configuration name="js.build_tools.gulp">
-        <watch expression="car" language="JavaScript" />
-        <watch expression="$sellerName.text()" language="JavaScript" />
+        <watch expression="arguments" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
@@ -1288,14 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/email-service-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="450">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/express.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.3461537" vertical-offset="0" max-vertical-offset="990">
@@ -1328,7 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="225">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,7 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="8089" max-vertical-offset="10065">
           <caret line="555" column="28" selection-start-line="555" selection-start-column="28" selection-end-line="555" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,7 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,7 +1342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="690">
           <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,8 +1394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="750">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="765">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1419,34 +1408,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="840">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/ajaxCarDetailsScrapperService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="765">
           <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/htmlCarDetailsScrapperService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/htmlScrapperService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="930">
-          <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1459,26 +1424,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="765">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/email-service-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/htmlCarDetailsScrapperService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/htmlScrapperService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="545" max-vertical-offset="1035">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="990">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/scrapper-service-test-autobazar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="435">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/scrapper-service-test-rst.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="750">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5125" vertical-offset="365" max-vertical-offset="765">
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.7723577" vertical-offset="120" max-vertical-offset="765">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1500,4 +1497,3 @@
     </states>
   </component>
 </project>
-

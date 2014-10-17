@@ -40,6 +40,16 @@ gulp.task('rst-parser', function () {
         }));
 });
 
+gulp.task('autobazar-parser', function () {
+    return gulp.src('tests/*autobazar.js', {read: false})
+        .pipe(mocha({
+            reporter: 'spec',
+            should:require('should'),
+            expect:require('chai').expect,
+            timeout:25000
+        }));
+});
+
 gulp.task('email-test', function () {
     return gulp.src('tests/email*.js', {read: false})
         .pipe(mocha({

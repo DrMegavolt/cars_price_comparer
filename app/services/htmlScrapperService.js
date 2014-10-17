@@ -5,7 +5,10 @@
 var request = require('request');
 var cheerio = require('cheerio');
 var carDetailsSrv = require('./htmlCarDetailsScrapperService');
+var Iconv = require('iconv').Iconv;
 var RSVP = require('rsvp');
+var fromEnc = 'utf-8';
+var toEnc = 'utf-8//IGNORE';
 function extractCar($, element, config) {
     try {
         var $e = $(element);
@@ -33,13 +36,17 @@ function extractCar($, element, config) {
     }
 }
 module.exports.load = function (config) {
+    fromEnc = config.encoding? config.encoding: fromEnc;
+    var translator = new Iconv(fromEnc,toEnc);
     var url = config.host + config.searchUrl;
     return new RSVP.Promise(function (res, rej) {
-        request(url, function (error, response, body) {
+        request({url:url, encoding:null }, function (error, response, body) {
+
             if (error) {
                 rej(error);
                 return;
             }
+            body = translator.convert(body).toString();
             var $ = cheerio.load(body);
             var cars = [];
             $(config.containerSelector).each(function (index, element) {
