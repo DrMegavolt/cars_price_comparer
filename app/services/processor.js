@@ -23,7 +23,7 @@ module.exports.process = function (req, res, next) {
     }).then(function (cars) {
         res.render('index', {
             title: 'Generator-Express MVC',
-            articles: cars
+            cars: cars || []
         });
     }).catch(function (err) {
         console.log(err);
