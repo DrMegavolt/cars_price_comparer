@@ -23,7 +23,7 @@ require('./config/express')(app, config);
 var interval = 10*60000;
 setInterval(function(){
     "use strict";
-    request('http://car-price-watcher.herokuapp.com', function(err,resp){
+    request('http://car-price-watcher.herokuapp.com/grab', function(err,resp){
         console.log(err)
     })
 
