@@ -39,7 +39,7 @@ module.exports.sendLatestCars = function (req, res) {
                 console.log(err);
                 res.render('index', {
                     title: 'EMAIL status ' + err,
-                    articles: cars
+                    articles: cars || []
                 });
             })
         }else{
