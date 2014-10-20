@@ -37,7 +37,7 @@ module.exports.sendNewCarsEmail = function (cars, callback) {
             }
             transporter.sendMail({
                 from: '"Робот Сканер сайтов"<car@service.com>',
-                to: 'sergeykuc@gmail.com',
+                to: 'sergeykuc@gmail.com, serhiychernikov@gmail.com',
                 subject: 'Последние поступления с сайтов автомобилей',
                 html: html
             }, callback)
