@@ -7,7 +7,7 @@ block content
     each car  in cars
       tr
         td(rowspan=2)
-          img('src'=car.photos[0])
+          img('src'=(car.photos? car.photos[0]:''))
         td
           a('href'=car.site + car.relativeUrl) #{car.title}
         td
