@@ -32,8 +32,7 @@ module.exports.process = function (req, res, next) {
 }
 
 module.exports.sendLatestCars = function (req, res) {
-    console.log(new Date().getTime() - 30 * 60000);
-    var startdate = new Date(new Date().getTime() - 30 * 60000);
+    var startdate = new Date(new Date().getTime() - 20 * 60000);
     carSrv.getLatestCars(startdate).then(function (cars) {
         if (cars && cars.length) {
             emailSrv.sendNewCarsEmail(cars, function (err) {
