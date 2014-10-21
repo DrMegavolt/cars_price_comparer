@@ -1,7 +1,5 @@
 var RSVP = require('rsvp');
-var mongoose = require('mongoose');
-var carSchema = require('../models/car').carSchema;
-var CarModel = mongoose.model('Car', carSchema);
+var CarModel = require('../models').CarModel;
 module.exports.saveCars = function (cars) {
     var promises = cars.map(function (c) {
         return new RSVP.Promise(function (resolve, reject) {
