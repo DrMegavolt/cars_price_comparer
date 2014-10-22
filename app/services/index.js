@@ -2,8 +2,8 @@
  * Created by drmegavolt on 10/21/14.
  */
 
-exports.carService = require('./carService');
-exports.configService = require('./configService');
-exports.siteConfigService = require('./siteConfigService');
-exports.emailService = require('./emailService');
-exports.processor = require('./processor');
+module.exports.carService = require('./carService');
+module.exports.configService = require('./configService');
+module.exports.siteConfigService = require('./siteConfigService');
+module.exports.emailService = require('./emailService');
+module.exports.processor = require('./processor');
