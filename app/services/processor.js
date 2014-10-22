@@ -24,16 +24,18 @@ module.exports.process = function () {
 }
 
 module.exports.sendLatestCars = function (req, res) {
-    var startdate = new Date(new Date().getTime() - 15 * 60000);
-    carSrv.getLatestCars(startdate).then(function (cars) {
-        if (cars && cars.length) {
-            services.siteConfigService.getConfig().then(function(config){
-                return services.emailService(config).sendNewCarsEmail(cars);
-            })
-        } else {
-            console.log('no new cars');
-        }
+    services.siteConfigService.getConfig().then(function (config) {
+        carSrv.getLatestCars(config.lastSentCar).then(function (cars) {
+            if (cars && cars.length) {
 
+                return services.emailService(config)
+                    .sendNewCarsEmail(cars)
+                    .then(services.siteConfigService.updateLastSavedTime)
+
+            } else {
+                console.log('no new cars');
+            }
+        })
     })
 
 }

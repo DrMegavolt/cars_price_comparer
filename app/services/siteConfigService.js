@@ -11,3 +11,16 @@ module.exports.getConfig = function () {
         })
     })
 }
+
+
+module.exports.updateLastSavedTime = function(){
+    return new Promise(function (resolve, reject) {
+        ConfigModel.findAndModify({},null,{lastSentCar:new Date()}, function (err, result) {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve(result);
+        })
+    })
+}
