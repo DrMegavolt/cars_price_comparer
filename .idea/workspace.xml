@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="">
+    <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="save last send date to db">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/carService.js" afterPath="$PROJECT_DIR$/app/services/carService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/emailService.js" afterPath="$PROJECT_DIR$/app/services/emailService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home.js" afterPath="$PROJECT_DIR$/app/controllers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.jade" afterPath="$PROJECT_DIR$/app/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout.jade" afterPath="$PROJECT_DIR$/app/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/processor.js" afterPath="$PROJECT_DIR$/app/services/processor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/siteConfigService.js" afterPath="$PROJECT_DIR$/app/services/siteConfigService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -56,18 +53,18 @@
       <file leaf-file-name="processor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/processor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="690">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="720">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="siteConfigService.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="siteConfigService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/siteConfigService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="465">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.39130434" vertical-offset="0" max-vertical-offset="345">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -125,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42028984" vertical-offset="335" max-vertical-offset="870">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="870">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -138,8 +135,8 @@
       <file leaf-file-name="carService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/carService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="705">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="600">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,8 +165,8 @@
       <file leaf-file-name="emailService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="915">
-              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="915">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
                 <element signature="e#730#939#0" expanded="false" />
               </folding>
@@ -1086,7 +1083,13 @@
       <option name="project" value="LOCAL" />
       <updated>1414008886209</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="save last send date to db">
+      <created>1414015472261</created>
+      <option name="number" value="00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1414015472261</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1133,7 +1136,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="template" />
     <MESSAGE value="rsvp promises" />
     <MESSAGE value="save data and prefilter already added" />
     <MESSAGE value="test to get real cars" />
@@ -1158,7 +1160,8 @@
     <MESSAGE value="fix email test and refactor email srv dependency" />
     <MESSAGE value="fix scrappers test" />
     <MESSAGE value="save date of send email" />
-    <option name="LAST_COMMIT_MESSAGE" value="save date of send email" />
+    <MESSAGE value="save last send date to db" />
+    <option name="LAST_COMMIT_MESSAGE" value="save last send date to db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1194,31 +1197,17 @@
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/controllers/home.js</url>
-          <line>25</line>
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/controllers/home.js</url>
-          <line>30</line>
-          <option name="timeStamp" value="217" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/services/processor.js</url>
-          <line>31</line>
-          <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/services/siteConfigService.js</url>
-          <line>22</line>
-          <option name="timeStamp" value="219" />
+          <url>file://$PROJECT_DIR$/app/services/carService.js</url>
+          <line>32</line>
+          <option name="timeStamp" value="228" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="220" />
+      <option name="time" value="229" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
         <watch expression="arguments[1]" language="JavaScript" />
+        <watch expression="processor.sendLatestCars()" language="JavaScript" />
       </configuration>
       <configuration name="js.build_tools.gulp">
         <watch expression="srv({emailRecipients:'sergeykuc@gmail.com'})" language="JavaScript" />
@@ -1578,18 +1567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/carService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="705">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="915">
-          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="915">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="e#730#939#0" expanded="false" />
           </folding>
@@ -1598,24 +1579,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/processor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="690">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/siteConfigService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="465">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="720">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42028984" vertical-offset="335" max-vertical-offset="870">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="870">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/carService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="600">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/siteConfigService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39130434" vertical-offset="0" max-vertical-offset="345">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>

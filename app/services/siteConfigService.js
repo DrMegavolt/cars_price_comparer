@@ -1,26 +1,10 @@
 "use strict";
 var ConfigModel = require('../models').SiteConfigModel;
 module.exports.getConfig = function () {
-    return new Promise(function (resolve, reject) {
-        ConfigModel.findOne({}, function (err, result) {
-            if (err) {
-                reject(err);
-                return;
-            }
-            resolve(result);
-        })
-    })
+    return ConfigModel.findOne({}).exec();
 }
 
 
 module.exports.updateLastSavedTime = function(){
-    return new Promise(function (resolve, reject) {
-        ConfigModel.findOneAndUpdate({},{lastSentCar:new Date()}, function (err, result) {
-            if (err) {
-                reject(err);
-                return;
-            }
-            resolve(result);
-        })
-    })
+    return ConfigModel.findOneAndUpdate({},{lastSentCar:new Date()}).exec();
 }

@@ -33,7 +33,9 @@ module.exports.sendLatestCars = function () {
                     .then(services.siteConfigService.updateLastSavedTime)
 
             } else {
-                console.log('no new cars');
+                return new Promise(function (resolve, reject) {
+                    resolve(null);
+                })
             }
         })
     })

@@ -32,7 +32,7 @@ router.get('/email', function (req, res, next) {
             title: 'EMAIL status:' + ( cars ? 'OK' : 'No New Cars'),
             cars: []
         });
-    }).catch(console.trace);
+    },console.trace);
 });
 
 router.get('/', function (req, res, next) {
