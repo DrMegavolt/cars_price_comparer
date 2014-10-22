@@ -1,4 +1,4 @@
-var srv = require('../app/grabbers/ajaxScrapperService');
+var srv = require('../app/grabbers').ajaxGrabber;
 
 
 describe('ajaxScrapperService', function () {
@@ -26,7 +26,7 @@ describe('ajaxScrapperService', function () {
         };
     it('should load first page of autoria', function (done) {
         srv.load(config).then(function (cars) {
-            cars.should.have.length(21);
+            cars.should.have.length(10);
             done();
         });
     })

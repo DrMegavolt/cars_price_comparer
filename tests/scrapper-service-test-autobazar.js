@@ -17,8 +17,8 @@ describe('htmlScrapperService', function () {
     }
     it('should load first page of avtobazar', function (done) {
         srv.load(config).then(function (cars) {
-            cars.should.have.length(21);
+            cars.length.should.be.greaterThan(19); //20 items on page + promo items
             done();
-        });
+        }).catch(done);
     })
 })
