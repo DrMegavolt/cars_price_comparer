@@ -8,7 +8,14 @@ module.exports = function (app) {
 };
 
 router.get('/grab', function (req, res, next) {
-    processor.process(req, res, next);
+    processor.process().then(function (cars) {
+        res.render('index', {
+            title: 'Generator-Express MVC',
+            cars: cars || []
+        });
+    }).catch(function (err) {
+        console.trace(err);
+    });
 });
 router.get('/email', function (req, res, next) {
     processor.sendLatestCars(req, res, next);

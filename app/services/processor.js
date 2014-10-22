@@ -7,26 +7,19 @@ var configSrv = require('../services/configService');
 var emailSrv = require('../services/emailService');
 var scrapper = require('../services/htmlScrapperService');
 var ajaxScrapper = require('../services/ajaxScrapperService');
-module.exports.process = function (req, res, next) {
+module.exports.process = function () {
     "use strict";
 
-    configSrv.getConfigs().then(function (configs) {
+    return configSrv.getConfigs().then(function (configs) {
         var promises = [];
         for (var i = 0; i < configs.length; i++) {
             var config = configs[i];
             var loader = config.listRequestMode === "HTML" ? scrapper : ajaxScrapper;
             promises.push(loader.load(config).then(carSrv.saveCars).catch(function (err) {
-                console.log(err);
+                console.trace(err);
             }));
         }
         return RSVP.all(promises)
-    }).then(function (cars) {
-        res.render('index', {
-            title: 'Generator-Express MVC',
-            cars: cars || []
-        });
-    }).catch(function (err) {
-        console.log(err);
     })
 
 }

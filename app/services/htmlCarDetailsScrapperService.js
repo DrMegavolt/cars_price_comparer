@@ -26,7 +26,7 @@ module.exports.load = function(config, car){
                 car.shortDescription = $shortDescription.text().trim();
             }
             catch(error){
-                console.log(error);
+                console.trace(error);
             }
             resolve(car);
         })

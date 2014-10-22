@@ -1,5 +1,4 @@
 "use strict";
-var q = require('q');
 var nodemailer = require('nodemailer'),
     path = require('path'),
     templatesDir = path.resolve(__dirname, '..', 'email_templates'),

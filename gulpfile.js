@@ -16,7 +16,7 @@ gulp.task('processor-test', function () {
             reporter: 'spec',
             should:require('should'),
             expect:require('chai').expect,
-            timeout:15000
+            timeout:20000
         }));
 });
 

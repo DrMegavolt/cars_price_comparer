@@ -6,7 +6,7 @@ var mongoose = require('mongoose'),
 module.exports.siteConfigSchema = new Schema({
     name:String,
     host:String,
-    lastSentCarId: ObjectId
+    lastSentCarId: Schema.Types.ObjectId
 
 
 });

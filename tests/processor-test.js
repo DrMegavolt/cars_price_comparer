@@ -1,14 +1,15 @@
+"use strict";
 var processor = require('../app/services/processor');
 var mongoose = require('mongoose');
-config = require('../config/config'),
-
+var config = require('../config/config');
 mongoose.connect(config.db);
 describe('processor ', function () {
-
-
-
     it('should load all cars ', function (done) {
-        processor.process(null, null);
-
+        processor.process().then(function(cars){
+            cars.should.have.length(3);
+            done();
+        }).catch(function(error){
+            done(error);
+        });
     })
 })

@@ -20,19 +20,19 @@ function extractCar($, element, config) {
 
         var $relativeUrl = $e.find(config.urlSelector);
         var car = {
-            title: $title.text().trim(),
+            title: ($title.text() || '').trim(),
             priceUSD: parseFloat(($priceUSD.text() || '0').replace(/[^\d]/g, '')),
             priceUAH: parseFloat(($priceUAH.text() || '0').replace(/[^\d]/g, '')),
-            city: $city.text().trim(),
+            city: ($city.text() || '').trim(),
             site: config.host,
-            relativeUrl: $relativeUrl.attr('href').trim(),
+            relativeUrl: ($relativeUrl.attr('href') || '').trim(),
             photos: [$photo.attr('src')],
             source: config.name
         };
         return car;
     }
     catch (error) {
-        console.log(error);
+        console.trace(error);
     }
 }
 module.exports.load = function (config) {
