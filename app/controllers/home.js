@@ -10,19 +10,27 @@ module.exports = function (app) {
 
 router.get('/grab', function (req, res, next) {
     processor.process().then(function (cars) {
+        cars = cars || [];
+        var result = [];
+        cars.forEach(function (item) {
+            var arr = item || [];
+            result = result.concat(arr.filter(function (c) {
+                return c;
+            }));
+        })
         res.render('index', {
             title: 'Generator-Express MVC',
-            cars: cars || []
+            cars: result
         });
     }).catch(function (err) {
         console.trace(err);
     });
 });
 router.get('/email', function (req, res, next) {
-    processor.sendLatestCars().then(function(cars){
+    processor.sendLatestCars().then(function (cars) {
         res.render('index', {
-            title: 'EMAIL status ' + err,
-            articles: cars || []
+            title: 'EMAIL status:' + ( cars ? 'OK' : 'No New Cars'),
+            cars: []
         });
     }).catch(console.trace);
 });
@@ -34,7 +42,9 @@ router.get('/', function (req, res, next) {
         cars = cars || [];
         res.render('index', {
             title: 'Автомобили за последний месяц',
-            cars: cars.map(function(car){return car.toObject()})
+            cars: cars.map(function (car) {
+                return car.toObject()
+            })
         });
     })
 

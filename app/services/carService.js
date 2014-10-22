@@ -9,18 +9,18 @@ module.exports.saveCars = function (cars) {
                     return;
                 }
                 if (car) {
-                    resolve(car);
+                    resolve(null);
                     return;
                 }// create only if not exist
-                resolve(new RSVP.Promise(function (res, rej) {
-                    CarModel.create(c, function (err) {
-                        if (err) {
-                            rej(err);
-                        } else {
-                            res(c)
-                        }
-                    })
-                }))
+
+                CarModel.create(c, function (err) {
+                    if (err) {
+                        reject(err);
+                        return;
+                    } else {
+                        resolve(c)
+                    }
+                })
             })
         })
     })
@@ -31,8 +31,10 @@ module.exports.saveCars = function (cars) {
 
 module.exports.getLatestCars = function (timeToNow) {
     return new Promise(function (resolve, reject) {
-        CarModel.find({created: {$gte: timeToNow}},function(err, cars){
-            if (err) { return reject(err);}
+        CarModel.find({created: {$gte: timeToNow}}, function (err, cars) {
+            if (err) {
+                return reject(err);
+            }
             return resolve(cars);
         })
     });

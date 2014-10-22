@@ -11,10 +11,10 @@ block content
         td
           a('href'=car.site + car.relativeUrl) #{car.title}
         td
-          $ #{car.priceUSD} #{car.priceUAH} грн.
+           |$  #{car.priceUSD} #{car.priceUAH} грн.
       tr
         td
-          телефон: #{car.phone} #{car.seller}
+          |телефон: #{car.phone} #{car.seller}
           div
             #{car.description}
 

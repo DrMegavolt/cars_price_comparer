@@ -47,7 +47,7 @@ module.exports = function (config) {
                                 html: html
                             }, function(err){
                                 if (err) { reject(err); return;}
-                                resolve(html);
+                                resolve(cars);
                             })
                         });
                     })

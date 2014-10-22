@@ -23,9 +23,9 @@ module.exports.process = function () {
 
 }
 
-module.exports.sendLatestCars = function (req, res) {
-    services.siteConfigService.getConfig().then(function (config) {
-        carSrv.getLatestCars(config.lastSentCar).then(function (cars) {
+module.exports.sendLatestCars = function () {
+    return services.siteConfigService.getConfig().then(function (config) {
+        return carSrv.getLatestCars(config.lastSentCar).then(function (cars) {
             if (cars && cars.length) {
 
                 return services.emailService(config)
