@@ -6,7 +6,8 @@ var mongoose = require('mongoose'),
 module.exports.siteConfigSchema = new Schema({
     name:String,
     host:String,
-    lastSentCarId: Schema.Types.ObjectId
+    lastSentCarId: Schema.Types.ObjectId,
+    emailRecipients : [String]
 
 
 });

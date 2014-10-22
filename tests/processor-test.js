@@ -1,5 +1,5 @@
 "use strict";
-var processor = require('../app/services/processor');
+var processor = require('../app/services').processor;
 var mongoose = require('mongoose');
 var config = require('../config/config');
 mongoose.connect(config.db);

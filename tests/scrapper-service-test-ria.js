@@ -1,4 +1,4 @@
-var srv = require('../app/services/ajaxScrapperService');
+var srv = require('../app/grabbers/ajaxScrapperService');
 
 
 describe('ajaxScrapperService', function () {

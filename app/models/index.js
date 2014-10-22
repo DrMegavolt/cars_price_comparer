@@ -9,3 +9,4 @@ exports.siteConfigSchema = require('./siteConfig').siteConfigSchema;
 
 exports.ConfigModel = mongoose.model('scrapperConfig', exports.configSchema, 'scrapperConfigs');
 exports.CarModel = mongoose.model('Car', exports.carSchema);
+exports.SiteConfigModel = mongoose.model('siteConfig', exports.siteConfigSchema);

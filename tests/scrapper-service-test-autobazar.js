@@ -1,4 +1,4 @@
-var srv = require('../app/services/htmlScrapperService');
+var srv = require('../app/grabbers/htmlScrapperService');
 
 
 describe('htmlScrapperService', function () {

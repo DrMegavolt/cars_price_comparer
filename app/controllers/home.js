@@ -1,8 +1,9 @@
 "use strict";
 var express = require('express'),
     router = express.Router(),
-    processor = require('../services/processor');
-var carSrv = require('../services/carService');
+    services = require('../services'),
+    processor = services.processor,
+    carSrv = services.carService;
 module.exports = function (app) {
     app.use('/', router);
 };
@@ -18,7 +19,12 @@ router.get('/grab', function (req, res, next) {
     });
 });
 router.get('/email', function (req, res, next) {
-    processor.sendLatestCars(req, res, next);
+    processor.sendLatestCars().then(function(cars){
+        res.render('index', {
+            title: 'EMAIL status ' + err,
+            articles: cars || []
+        });
+    }).catch(console.trace);
 });
 
 router.get('/', function (req, res, next) {
