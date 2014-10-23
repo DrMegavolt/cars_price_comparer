@@ -36,11 +36,11 @@ function extractCar($, element, config) {
     }
 }
 module.exports.load = function (config) {
-    fromEnc = config.encoding? config.encoding: fromEnc;
-    var translator = new Iconv(fromEnc,toEnc);
+    fromEnc = config.encoding ? config.encoding : fromEnc;
+    var translator = new Iconv(fromEnc, toEnc);
     var url = config.host + config.searchUrl;
     return new RSVP.Promise(function (res, rej) {
-        request({url:url, encoding:null }, function (error, response, body) {
+        request({url: url, encoding: null}, function (error, response, body) {
 
             if (error) {
                 rej(error);
@@ -54,7 +54,9 @@ module.exports.load = function (config) {
                 cars.push(car);
             });
 
-            var promises = cars.filter(function(c){ return c;}).map(function (car) {
+            var promises = cars.filter(function (c) {
+                return c;
+            }).map(function (car) {
 
                 return carDetailsSrv.load(config, car);
             })

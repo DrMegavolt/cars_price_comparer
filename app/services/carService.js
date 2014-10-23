@@ -1,13 +1,15 @@
+"use strict";
 var RSVP = require('rsvp');
 var CarModel = require('../models').CarModel;
+
+module.exports.findCar= function(car){
+    return CarModel.findOne({relativeUrl: car.relativeUrl}).exec();
+};
+
 module.exports.saveCars = function (cars) {
     var promises = cars.map(function (c) {
         return new RSVP.Promise(function (resolve, reject) {
-            CarModel.findOne({relativeUrl: c.relativeUrl}).exec(function (err, car) {
-                if (err) {
-                    reject(err)
-                    return;
-                }
+            module.exports.findCar(c).then(function(car){
                 if (car) {
                     resolve(null);
                     return;
@@ -22,6 +24,7 @@ module.exports.saveCars = function (cars) {
                     }
                 })
             })
+
         })
     })
     return RSVP.all(promises);

@@ -17,6 +17,8 @@ getPropertyByString = function (o, s) {
 module.exports.load = function (config, id) {
 
     return new RSVP.Promise(function (resolve, reject) {
+        var relativeUrl = config.urlSelector.replace('{0}', id);
+
         request(config.host + config.itemUrl.replace('{0}', id), function (error, response, body) {
             if (error) {
                 reject(error);
@@ -32,7 +34,7 @@ module.exports.load = function (config, id) {
                 priceUAH: parseFloat(getPropertyByString(json,config.priceUAHSelector)) || 0,
                 city: getPropertyByString(json,config.citySelector),
                 site: config.host,
-                relativeUrl: config.urlSelector.replace('{0}', id),
+                relativeUrl: relativeUrl,
                 photos: [photoUrl],
                 source: config.name,
                 seller: getPropertyByString(json,config.sellerNameSelector),

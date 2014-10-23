@@ -26,8 +26,11 @@ describe('ajaxScrapperService', function () {
         };
     it('should load first page of autoria', function (done) {
         srv.load(config).then(function (cars) {
-            cars.should.have.length(10);
+            cars.length.should.be.greaterThan(9); //10 items on page + promo items
             done();
-        });
+        }).catch(function(error, x){
+            done(error)
+            console.log(error);
+        });;
     })
 })
