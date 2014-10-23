@@ -1,21 +1,36 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  table
-    each car  in cars
-      tr
-        td(rowspan=2)
-          img('src'=(car.photos? car.photos[0]:''))
-        td
-          a('href'=car.site + car.relativeUrl) #{car.title}
-        td
-           |$  #{car.priceUSD} #{car.priceUAH} грн.
-      tr
-        td
-          |телефон: #{car.phone} #{car.seller}
-          div
-            | #{car.description}
+  div.container-fluid
+    div.panel.panel-default
+      div.panel-heading
+        h3= title
+      div.panel-body
+        each car  in cars
+          div.row.top-buffer
+            div.col-md-4
+              img.img-responsive.img-thumbnail('src'=(car.photos? car.photos[0]:'') )
+
+            div.col-md-8
+              div.row
+                div.col-md-12
+                  a('href'=car.site + car.relativeUrl) #{car.title}
+
+              div.row
+                div.col-md-4
+                  dl
+                    dt
+                      |телефон:
+                    dd
+                      |#{car.phone}
+                    dd
+                      |#{car.seller}
+                    dt
+                      |Цена
+                    dd
+                      |<strong>$ #{car.priceUSD}</strong> (#{car.priceUAH} грн.)
+                div.col-md-8
+                  |#{car.description}
+
 
 

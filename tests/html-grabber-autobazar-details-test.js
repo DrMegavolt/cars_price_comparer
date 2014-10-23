@@ -27,8 +27,7 @@ describe('htmlDetailsScrapperService', function () {
             site:'http://avtobazar.ua',
             relativeUrl:'/vaz-kalina-2008-kiev-1-4184737-1.html'
         }).then(function (car) {
-            console.trace(car);
             done();
-        }).catch(done);
+        }, done);
     })
 })
