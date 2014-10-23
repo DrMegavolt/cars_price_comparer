@@ -27,10 +27,12 @@ module.exports.sendLatestCars = function () {
     return services.siteConfigService.getConfig().then(function (config) {
         return carSrv.getLatestCars(config.lastSentCar).then(function (cars) {
             if (cars && cars.length) {
-
+                var currentTime = new Date();
                 return services.emailService(config)
                     .sendNewCarsEmail(cars)
-                    .then(services.siteConfigService.updateLastSavedTime)
+                    .then(function () {
+                        services.siteConfigService.updateLastSavedTime(currentTime)
+                    })
 
             } else {
                 return new Promise(function (resolve, reject) {

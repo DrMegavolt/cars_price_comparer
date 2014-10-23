@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="save last send date to db">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/carService.js" afterPath="$PROJECT_DIR$/app/services/carService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home.js" afterPath="$PROJECT_DIR$/app/controllers/home.js" />
+    <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/processor.js" afterPath="$PROJECT_DIR$/app/services/processor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/siteConfigService.js" afterPath="$PROJECT_DIR$/app/services/siteConfigService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -53,8 +51,8 @@
       <file leaf-file-name="processor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/processor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="720">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="750">
+              <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -63,8 +61,8 @@
       <file leaf-file-name="siteConfigService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/siteConfigService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39130434" vertical-offset="0" max-vertical-offset="345">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="345">
+              <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -135,8 +133,8 @@
       <file leaf-file-name="carService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/carService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="600">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="600">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -1089,7 +1087,13 @@
       <option name="project" value="LOCAL" />
       <updated>1414015472261</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="sorting of return results">
+      <created>1414018389648</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1414018389648</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1136,7 +1140,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="rsvp promises" />
     <MESSAGE value="save data and prefilter already added" />
     <MESSAGE value="test to get real cars" />
     <MESSAGE value="parsing money fix, email template style" />
@@ -1161,7 +1164,8 @@
     <MESSAGE value="fix scrappers test" />
     <MESSAGE value="save date of send email" />
     <MESSAGE value="save last send date to db" />
-    <option name="LAST_COMMIT_MESSAGE" value="save last send date to db" />
+    <MESSAGE value="sorting of return results" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting of return results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1577,14 +1581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/processor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="720">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="870">
@@ -1595,16 +1591,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/carService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="600">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="600">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/processor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="750">
+          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/siteConfigService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39130434" vertical-offset="0" max-vertical-offset="345">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="345">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
           <folding />
         </state>
       </provider>

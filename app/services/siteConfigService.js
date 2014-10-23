@@ -5,6 +5,6 @@ module.exports.getConfig = function () {
 }
 
 
-module.exports.updateLastSavedTime = function(){
-    return ConfigModel.findOneAndUpdate({},{lastSentCar:new Date()}).exec();
+module.exports.updateLastSavedTime = function(date){
+    return ConfigModel.findOneAndUpdate({},{lastSentCar:(date || new Date())}).exec();
 }
