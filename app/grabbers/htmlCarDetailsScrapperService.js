@@ -15,6 +15,7 @@ module.exports.load = function(config, car){
             }
             body = translator.convert(body).toString();
             var $ = cheerio.load(body);
+            $('script').remove();
             var $sellerName = $(config.sellerNameSelector);
             var $sellerPhone = $(config.sellerPhoneSelector);
             var $description = $(config.descriptionSelector);

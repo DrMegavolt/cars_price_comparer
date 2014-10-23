@@ -49,6 +49,15 @@ gulp.task('autobazar-parser', function () {
             timeout:25000
         }));
 });
+gulp.task('autobazar-details-parser', function () {
+    return gulp.src('tests/html-grabber-autobazar-details-test.js', {read: false})
+        .pipe(mocha({
+            reporter: 'spec',
+            should:require('should'),
+            expect:require('chai').expect,
+            timeout:25000
+        }));
+});
 
 gulp.task('email-test', function () {
     return gulp.src('tests/email*.js', {read: false})

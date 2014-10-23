@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5abaa5c6-0082-4396-a38f-b5d8b70d83c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/processor.js" afterPath="$PROJECT_DIR$/app/services/processor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/siteConfigService.js" afterPath="$PROJECT_DIR$/app/services/siteConfigService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/html-grabber-autobazar-details-test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/grabbers/htmlCarDetailsScrapperService.js" afterPath="$PROJECT_DIR$/app/grabbers/htmlCarDetailsScrapperService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.jade" afterPath="$PROJECT_DIR$/app/views/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="price_comparer.iws" />
@@ -41,8 +43,28 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.235294" vertical-offset="0" max-vertical-offset="405">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state vertical-scroll-proportion="-4.117647" vertical-offset="60" max-vertical-offset="405">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="htmlCarDetailsScrapperService.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/grabbers/htmlCarDetailsScrapperService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3478261" vertical-offset="255" max-vertical-offset="600">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html-grabber-autobazar-details-test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/html-grabber-autobazar-details-test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="585">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -58,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="siteConfigService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="siteConfigService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/siteConfigService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="345">
-              <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -98,6 +120,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="621" max-vertical-offset="1125">
+              <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,21 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="480">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="870">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="870">
+              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -135,16 +157,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="600">
               <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scrapper-service-test-ria.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/scrapper-service-test-ria.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="570">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -177,16 +189,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="690">
               <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scrapper-service-test-autobazar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/scrapper-service-test-autobazar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="435">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -239,6 +241,9 @@
           </GulpTaskState>
           <GulpTaskState>
             <task-name>autobazar-parser</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>autobazar-details-parser</task-name>
           </GulpTaskState>
           <GulpTaskState>
             <task-name>email-test</task-name>
@@ -482,31 +487,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/app/services" />
       <recent name="$PROJECT_DIR$/app/grabbers" />
       <recent name="$PROJECT_DIR$/app/models" />
-      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/app/email_templates/new_cars" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/grabbers" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.node">
-    <configuration default="false" name="rst-parser" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
-      <node-options>--harmony</node-options>
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>rst-parser</task>
-      </tasks>
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <RunnerSettings RunnerId="Js.BuildTools.Gulp" />
-      <RunnerSettings RunnerId="node-js.debug.program.runner" />
-      <ConfigurationWrapper RunnerId="Js.BuildTools.Gulp" />
-      <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Gulp.js.autobazar-details-parser">
     <configuration default="false" name="processor-test" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-options />
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
@@ -560,6 +551,18 @@
       <RunnerSettings RunnerId="Js.BuildTools.Gulp" />
       <RunnerSettings RunnerId="node-js.debug.program.runner" />
       <ConfigurationWrapper RunnerId="Js.BuildTools.Gulp" />
+      <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="autobazar-details-parser" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>autobazar-details-parser</task>
+      </tasks>
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <RunnerSettings RunnerId="node-js.debug.program.runner" />
       <ConfigurationWrapper RunnerId="node-js.debug.program.runner" />
       <method />
     </configuration>
@@ -640,19 +643,19 @@
       <item index="0" class="java.lang.String" itemvalue="Mocha.mocha" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.node" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.node (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Gulp.js.rst-parser" />
-      <item index="4" class="java.lang.String" itemvalue="Gulp.js.processor-test" />
-      <item index="5" class="java.lang.String" itemvalue="Gulp.js.email-test" />
-      <item index="6" class="java.lang.String" itemvalue="Gulp.js.ria-parser" />
-      <item index="7" class="java.lang.String" itemvalue="Gulp.js.autobazar-parser" />
+      <item index="3" class="java.lang.String" itemvalue="Gulp.js.processor-test" />
+      <item index="4" class="java.lang.String" itemvalue="Gulp.js.email-test" />
+      <item index="5" class="java.lang.String" itemvalue="Gulp.js.ria-parser" />
+      <item index="6" class="java.lang.String" itemvalue="Gulp.js.autobazar-parser" />
+      <item index="7" class="java.lang.String" itemvalue="Gulp.js.autobazar-details-parser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gulp.js.email-test" />
-        <item index="1" class="java.lang.String" itemvalue="Gulp.js.autobazar-parser" />
-        <item index="2" class="java.lang.String" itemvalue="Gulp.js.ria-parser" />
-        <item index="3" class="java.lang.String" itemvalue="Gulp.js.rst-parser" />
-        <item index="4" class="java.lang.String" itemvalue="Gulp.js.processor-test" />
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.autobazar-details-parser" />
+        <item index="1" class="java.lang.String" itemvalue="Gulp.js.processor-test" />
+        <item index="2" class="java.lang.String" itemvalue="Gulp.js.email-test" />
+        <item index="3" class="java.lang.String" itemvalue="Gulp.js.autobazar-parser" />
+        <item index="4" class="java.lang.String" itemvalue="Gulp.js.ria-parser" />
       </list>
     </recent_temporary>
   </component>
@@ -1093,7 +1096,13 @@
       <option name="project" value="LOCAL" />
       <updated>1414018389648</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="fix bug: not all cars send via email. time gap appears equal to time required to send email">
+      <created>1414056470899</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1414056470899</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1140,7 +1149,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="save data and prefilter already added" />
     <MESSAGE value="test to get real cars" />
     <MESSAGE value="parsing money fix, email template style" />
     <MESSAGE value=" {{shortDescription}}  {{description}}" />
@@ -1165,7 +1173,8 @@
     <MESSAGE value="save date of send email" />
     <MESSAGE value="save last send date to db" />
     <MESSAGE value="sorting of return results" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorting of return results" />
+    <MESSAGE value="fix bug: not all cars send via email. time gap appears equal to time required to send email" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug: not all cars send via email. time gap appears equal to time required to send email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1205,8 +1214,18 @@
           <line>32</line>
           <option name="timeStamp" value="228" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tests/html-grabber-autobazar-details-test.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/grabbers/htmlCarDetailsScrapperService.js</url>
+          <line>25</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="229" />
+      <option name="time" value="231" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -1216,17 +1235,11 @@
       <configuration name="js.build_tools.gulp">
         <watch expression="srv({emailRecipients:'sergeykuc@gmail.com'})" language="JavaScript" />
         <watch expression="['a'].join(',')" language="JavaScript" />
+        <watch expression="$description.html()" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/node_modules/nodemailer-wellknown/services.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1572" max-vertical-offset="2850">
-          <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/nodemailer/src/nodemailer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1051" max-vertical-offset="3705">
@@ -1391,14 +1404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="990">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/grabbers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
@@ -1461,14 +1466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/grabbers/htmlCarDetailsScrapperService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="585">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1563,14 +1560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.235294" vertical-offset="0" max-vertical-offset="405">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/emailService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="915">
@@ -1578,14 +1567,6 @@
           <folding>
             <element signature="e#730#939#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="870">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1607,8 +1588,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/siteConfigService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261" vertical-offset="0" max-vertical-offset="345">
-          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="870">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="621" max-vertical-offset="1125">
+          <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/html-grabber-autobazar-details-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="585">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.117647" vertical-offset="60" max-vertical-offset="405">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/grabbers/htmlCarDetailsScrapperService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3478261" vertical-offset="255" max-vertical-offset="600">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding />
         </state>
       </provider>
